@@ -5,7 +5,7 @@
     padding-bottom: 136px;
 }
 
-.footer-wrapper{
+.footer__wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
