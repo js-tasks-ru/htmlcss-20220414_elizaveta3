@@ -1,1 +1,86 @@
 /* Стилизация кнопки */
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--white);
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    padding: 14px 62px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.wrapper__button-primary {
+    background-color: var(--blue);
+}
+
+.wrapper__button-primary:hover,
+.wrapper__button-primary:focus,
+.wrapper__button-primary:active{
+    background-color: var(--dark-blue);
+    transition: opacity 200ms ease-in-out;
+
+}
+
+.wrapper__button-primary_disabled{
+    background-color: var(--blue);
+    opacity: 0.5;
+    cursor: default;
+}
+
+.wrapper__button-secondary {
+    background-color: var(--purple);
+}
+
+.wrapper__button-secondary:hover,
+.wrapper__button-secondary:focus,
+.wrapper__button-secondary:active{
+    background-color: var(--dark-purple);
+    transition: opacity 200ms ease-in-out;
+
+}
+
+.wrapper__button-secondary_disabled{
+    background-color: var(--purple);
+    opacity: 0.5;
+    cursor: default;
+}
+
+.wrapper__button-alternate{
+    background-color: var(--white);
+    color: var(--grey-4);
+    border: 1px solid var(--grey-3);
+}
+
+.wrapper__button-alternate:hover,
+.wrapper__button-alternate:focus,
+.wrapper__button-alternate:active{
+    border: 1px solid var(--black);
+    transition: opacity 200ms ease-in-out;
+}
+
+.wrapper__button-alternate_disabled{
+    background-color: var(--white);
+    color: var(--grey-4);
+    border: 1px solid var(--grey-3);
+    opacity: 0.3;
+    cursor: default;
+}
+
