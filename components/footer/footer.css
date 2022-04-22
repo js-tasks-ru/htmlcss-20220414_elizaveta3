@@ -1,6 +1,8 @@
 .footer{
     background-color: var(--secondary);
     min-height: 200px;
+    padding-top: 71px;
+    padding-bottom: 136px;
 }
 
 .footer__title{
@@ -10,8 +12,9 @@
     font-size: 38px;
     line-height: 48px;
     margin: 0;
-    padding-top: 71px;
-    padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
     align-items: center;
     }
 
@@ -21,9 +24,8 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    margin: 0;
-    padding-bottom: 136px;
-    width: 550px;
+    margin: 0 auto;
+    max-width: 550px;
     text-indent: 5px;
     text-align: center;
 }
