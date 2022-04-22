@@ -1,4 +1,10 @@
 @import '../fonts/fonts.css';
+@import '../../components/header/header.css';
+@import '../../components/preview/preview.css';
+@import '../../components/footer/footer.css';
+@import '../../components/page/page.css';
+@import '../../components/container/container.css';
+
 
 :root {
     --white: #ffffff;
@@ -7,7 +13,7 @@
     --purple: #7048E8;
     --blue: #374FC7;
     --red: #F03D3E;
-    --grey-1: #F8F9FA;
+    --grey-1: #F9FAFC;
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
@@ -15,10 +21,17 @@
     --error: var(--red);
     --success: var(--blue);
 
-    --primary: var(--blue);
-    --secondary: var(--purple);
+    --primary: var(--grey-1);
+    --secondary: var(--white);
 }
 
 * {
     font-family: 'Roboto', sans-serif;
+    color: var(--black);
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
 }

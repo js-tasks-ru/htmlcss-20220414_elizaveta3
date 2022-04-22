@@ -1,0 +1,35 @@
+.footer{
+    background-color: var(--secondary);
+    min-height: 200px;
+    padding-top: 71px;
+    padding-bottom: 136px;
+}
+
+.footer__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__title{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 48px;
+    margin: 0;
+    margin-bottom: 32px;
+    align-items: center;
+    }
+
+.footer__discription{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    max-width: 640px;
+    text-indent: 5px;
+    text-align: center;
+}
