@@ -5,6 +5,12 @@
     padding-bottom: 136px;
 }
 
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .footer__title{
     font-family: 'Inter';
     font-style: normal;
@@ -12,8 +18,6 @@
     font-size: 38px;
     line-height: 48px;
     margin: 0;
-    display: flex;
-    justify-content: center;
     margin-bottom: 32px;
     align-items: center;
     }
@@ -24,8 +28,8 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    margin: 0 auto;
-    max-width: 550px;
+    margin: 0;
+    max-width: 640px;
     text-indent: 5px;
     text-align: center;
 }
