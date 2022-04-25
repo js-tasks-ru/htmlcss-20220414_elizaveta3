@@ -8,20 +8,18 @@
     line-height: 19px;
     color: var(--white);
     background-color: var(--black);
-    max-width: 182px;
     box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    padding: 15px 62px 14px 63px;
     margin-bottom: 20px;
     border-radius: 8px;
     border: none;
     cursor: pointer;
     transition: opacity 200ms ease-in-out;
+    display: inline-block;
 }
 
 .button_primary {
     background-color: var(--blue);
+    padding: 15px 62px 14px 63px;
 }
 
 .button_primary:hover,
@@ -32,6 +30,7 @@
 
 .button_secondary {
     background-color: var(--purple);
+    padding: 15px 53px 14px;
 }
 
 .button_secondary:hover,
@@ -44,6 +43,7 @@
     background-color: var(--white);
     color: var(--grey-4);
     border: 1px solid var(--grey-3);
+    padding: 15px 58px 14px;
 }
 
 .button_alternate:hover,
