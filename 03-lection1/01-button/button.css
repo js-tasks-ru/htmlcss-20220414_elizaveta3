@@ -9,17 +9,21 @@
     color: var(--white);
     background-color: var(--black);
     box-sizing: border-box;
-    margin-bottom: 20px;
     border-radius: 8px;
     border: none;
     cursor: pointer;
     transition: opacity 200ms ease-in-out;
     display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 14px;
+}
+
+.button_full_width{
+    width: 182px;
 }
 
 .button_primary {
     background-color: var(--blue);
-    padding: 15px 62px 14px 63px;
 }
 
 .button_primary:hover,
@@ -30,7 +34,6 @@
 
 .button_secondary {
     background-color: var(--purple);
-    padding: 15px 53px 14px;
 }
 
 .button_secondary:hover,
@@ -43,7 +46,6 @@
     background-color: var(--white);
     color: var(--grey-4);
     border: 1px solid var(--grey-3);
-    padding: 15px 58px 14px;
 }
 
 .button_alternate:hover,
