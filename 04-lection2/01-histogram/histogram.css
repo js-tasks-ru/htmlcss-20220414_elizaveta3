@@ -16,10 +16,10 @@
 
 .histogram__header-list{
     margin: 0;
-    max-width: 200px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-right: 12px;
 }
 
 .histogram__header-term,
@@ -40,15 +40,12 @@
     margin: 0;
 }
 
-.histogram__button{
+.histogram__header-link{
     font-family: 'Inter';
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
     color: var(--histogram);
-    background-color: var(--white);
-    border: none;
-    padding: 0;
     cursor: pointer;
 }
 
@@ -56,14 +53,13 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    justify-content: space-evenly;
     width: 100%;
     height: 50px;
     gap: 1px;
-    
 }
 
 .histogram__column{
-    width: 9px;
+    flex-basis: 9px;
+    flex-grow: 1;
     background-color: var(--histogram);
 }
