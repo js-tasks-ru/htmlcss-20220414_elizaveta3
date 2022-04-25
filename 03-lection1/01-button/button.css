@@ -1,17 +1,16 @@
 /* Стилизация кнопки */
-* {
-    box-sizing: border-box;
-}
 
-.wrapper {
+.button {
+    box-sizing: border-box;
     max-width: 800px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 40px;
+    
 }
 
-.button {
+.button__button {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -25,58 +24,54 @@
     border-radius: 8px;
     border: none;
     cursor: pointer;
+    transition: opacity 200ms ease-in-out;
 }
 
-.wrapper__button-primary {
+.button_primary {
     background-color: var(--blue);
 }
 
-.wrapper__button-primary:hover,
-.wrapper__button-primary:focus,
-.wrapper__button-primary:active{
+.button_primary:hover,
+.button_primary:focus,
+.button_primary:active{
     background-color: var(--dark-blue);
-    transition: opacity 200ms ease-in-out;
-
 }
 
-.wrapper__button-primary_disabled{
+.button_primary-disabled:disabled{
     background-color: var(--blue);
     opacity: 0.5;
     cursor: default;
 }
 
-.wrapper__button-secondary {
+.button_secondary {
     background-color: var(--purple);
 }
 
-.wrapper__button-secondary:hover,
-.wrapper__button-secondary:focus,
-.wrapper__button-secondary:active{
+.button_secondary:hover,
+.button_secondary:focus,
+.button_secondary:active{
     background-color: var(--dark-purple);
-    transition: opacity 200ms ease-in-out;
-
 }
 
-.wrapper__button-secondary_disabled{
+.button_secondary-disabled:disabled{
     background-color: var(--purple);
     opacity: 0.5;
     cursor: default;
 }
 
-.wrapper__button-alternate{
+.button_alternate{
     background-color: var(--white);
     color: var(--grey-4);
     border: 1px solid var(--grey-3);
 }
 
-.wrapper__button-alternate:hover,
-.wrapper__button-alternate:focus,
-.wrapper__button-alternate:active{
+.button_alternate:hover,
+.button_alternate:focus,
+.button_alternate:active{
     border: 1px solid var(--black);
-    transition: opacity 200ms ease-in-out;
 }
 
-.wrapper__button-alternate_disabled{
+.button_alternate-disabled:disabled{
     background-color: var(--white);
     color: var(--grey-4);
     border: 1px solid var(--grey-3);
