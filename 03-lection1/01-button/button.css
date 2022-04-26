@@ -13,13 +13,12 @@
     border: none;
     cursor: pointer;
     transition: opacity 200ms ease-in-out;
-    display: inline-block;
     padding-top: 15px;
     padding-bottom: 14px;
 }
 
 .button_full_width{
-    width: 182px;
+    width: 100%;
 }
 
 .button_primary {
