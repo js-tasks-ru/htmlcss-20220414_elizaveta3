@@ -8,7 +8,6 @@
 
 .histogram__header{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 39px;
@@ -25,19 +24,21 @@
 .histogram__header-text{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
     color: var(--black);
 }
 
 .histogram__header-heading{
-    opacity: 0.8;
     margin: 0;
-    margin-bottom: 6px;
+    font-size: 20px;
+    line-height: 26px;
 }
 
 .histogram__header-text{
+    font-size: 16px;
+    line-height: 24px;
     margin: 0;
+    opacity: 0.8;
+    margin-bottom: 6px;
 }
 
 .histogram__header-link{
