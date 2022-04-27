@@ -48,6 +48,7 @@
     line-height: 26px;
     color: var(--histogram);
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .histogram__chart{
