@@ -9,3 +9,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
+
+.preview__inner-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 38px;
+}
