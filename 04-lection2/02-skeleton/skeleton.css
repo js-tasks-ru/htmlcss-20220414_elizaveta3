@@ -13,13 +13,11 @@
 }
 
 .skeleton__top-rows{
-    display: flex;
-    flex-direction: column;
     width: 475px;
 }
 
 .skeleton__circle{
-    width: 64px;
+    min-width: 64px;
     height: 64px;
     border-radius: 50%;
     background-color: var(--grey-2);
@@ -50,7 +48,5 @@
 }
 
 .skeleton__bottom{
-    display: flex;
-    flex-direction: column;
     width: 515px;
 }
