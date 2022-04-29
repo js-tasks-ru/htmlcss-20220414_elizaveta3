@@ -4,6 +4,7 @@
 @import '../../components/footer/footer.css';
 @import '../../components/page/page.css';
 @import '../../components/container/container.css';
+@import '../../components/cards/card.css';
 
 
 :root {
@@ -28,7 +29,12 @@
     --secondary: var(--white);
 }
 
-* {
+html,
+body{
+    height: 100%;
+}
+
+body {
     font-family: 'Roboto', sans-serif;
     color: var(--black);
 }
