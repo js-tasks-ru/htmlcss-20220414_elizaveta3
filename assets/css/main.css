@@ -20,6 +20,8 @@
     --grey-3: #ACB5BD;
     --grey-4: #495057;
     --histogram: #4263EB;
+    --shadow: rgba(33, 36, 41, 0.05);
+
 
     --error: var(--red);
     --success: var(--blue);
