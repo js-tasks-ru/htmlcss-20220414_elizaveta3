@@ -4,6 +4,7 @@
 @import '../../components/footer/footer.css';
 @import '../../components/page/page.css';
 @import '../../components/container/container.css';
+@import '../../components/cards/card.css';
 
 
 :root {
@@ -21,6 +22,8 @@
     --grey-4: #495057;
     --histogram: #4263EB;
     --grey-5: rgba(196, 196, 196, 1);
+    --shadow: rgba(33, 36, 41, 0.05);
+
 
     --error: var(--red);
     --success: var(--blue);
@@ -29,7 +32,12 @@
     --secondary: var(--white);
 }
 
-* {
+html,
+body{
+    height: 100%;
+}
+
+body {
     font-family: 'Roboto', sans-serif;
     color: var(--black);
 }
