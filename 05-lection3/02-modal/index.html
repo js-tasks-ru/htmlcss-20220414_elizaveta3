@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <!-- Страница с модалкой -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./modal.css">
-        <title>Modal</title>
-    </head>
-    <body>
-    </body>
-    <script src="./index.js"></script> 
+
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./modal.css">
+    <title>Modal</title>
+</head>
+
+<body style="padding: 50px;">
+    <button class="button button_primary" id="modal-open">Submit</button>
+    <div class="modal" id="modal">
+        <div class="modal__window">
+            <button class="modal__button-close" id="modal-close"></button>
+            <form action="#" class="modal__form">
+                <div class="modal__input-row">
+                    <label for="modal-name" class="modal__label">
+                        NAME
+                    </label>
+                    <input class="modal__input" type="text" placeholder="NAME" id="modal-name" required>
+                </div>
+                <div class="modal__input-row">
+                    <label for="modal-email" class="modal__label">
+                        EMAIL
+                    </label>
+                    <input class="modal__input" type="email" placeholder="EMAIL" id="modal-email" required>
+                </div>
+            </form>
+            <button class="button button_primary">Submit</button>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+
 </html>
