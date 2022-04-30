@@ -5,15 +5,18 @@
     max-width: 579px;
     border: 1px solid var(--grey-3);
     border-radius: 8px;
+    gap:24px;
 }
 
 .skeleton__top{
     display: flex;
-    margin-bottom: 24px;
 }
 
 .skeleton__top-rows{
-    width: 475px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .skeleton__circle{
@@ -24,6 +27,12 @@
     margin-right: 16px;
 }
 
+.skeleton__bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .skeleton__row{
     background: var(--gradient);
     height: 20px;
@@ -31,7 +40,6 @@
 
 .skeleton__row_small{
     width: 40%;
-    margin-bottom: 8px;
 }
 
 .skeleton__row_medium{
@@ -40,7 +48,6 @@
 
 .skeleton__row_full_width{
     width: 100%;
-    margin-bottom: 8px;
 }
 
 .skeleton__row_large{
