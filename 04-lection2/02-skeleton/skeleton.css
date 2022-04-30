@@ -1,0 +1,55 @@
+.skeleton{
+    padding: 32px 40px 32px 24px;
+    display: flex;
+    flex-direction: column;
+    max-width: 579px;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    gap:24px;
+}
+
+.skeleton__top{
+    display: flex;
+}
+
+.skeleton__top-rows{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.skeleton__circle{
+    min-width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: var(--grey-2);
+    margin-right: 16px;
+}
+
+.skeleton__bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.skeleton__row{
+    background: var(--gradient);
+    height: 20px;
+}
+
+.skeleton__row_small{
+    width: 40%;
+}
+
+.skeleton__row_medium{
+    width: 60%;
+}
+
+.skeleton__row_full_width{
+    width: 100%;
+}
+
+.skeleton__row_large{
+    width: 93%;
+}
