@@ -1,23 +1,7 @@
-.button {
-    min-width: 182px;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: var(--white);
-    background-color: var(--black);
-    box-sizing: border-box;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    transition: opacity 200ms ease-in-out;
-    padding-top: 15px;
-    padding-bottom: 14px;
-}
+@import url(../../03-lection1/01-button/button.css);
 
-.button_primary {
-    background-color: var(--blue);
+ .button {
+     width: 182px;
 }
 
 .modal{
@@ -72,16 +56,15 @@
 }
 
 .modal__form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     margin-bottom: 24px;
 }
 
 .modal__input-row{
     display: flex;
     flex-direction: column;
-}
-
-.modal__input-row:not(:last-child){
-    margin-bottom: 16px;
 }
 
 .modal__label{
