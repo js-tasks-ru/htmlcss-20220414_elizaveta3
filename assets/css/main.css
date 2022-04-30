@@ -5,11 +5,15 @@
 @import '../../components/page/page.css';
 @import '../../components/container/container.css';
 @import '../../components/cards/card.css';
+@import '../../components/component/component.css';
+@import '../../04-lection2/01-histogram/histogram.css';
+
 
 
 :root {
     --white: #ffffff;
     --black: #212429;
+    --max-black: #000000;
     --pink: #F784AD;
     --purple: #7048E8;
     --dark-purple: #5028C6;
@@ -22,6 +26,7 @@
     --grey-4: #495057;
     --histogram: #4263EB;
     --shadow: rgba(33, 36, 41, 0.05);
+    
 
 
     --error: var(--red);
