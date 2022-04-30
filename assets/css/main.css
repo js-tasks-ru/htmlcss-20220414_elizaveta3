@@ -5,6 +5,7 @@
 @import '../../components/page/page.css';
 @import '../../components/container/container.css';
 @import '../../components/cards/card.css';
+@import '../../03-lection1/01-button/button.css';
 
 
 :root {
@@ -22,6 +23,7 @@
     --grey-4: #495057;
     --gradient: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
     --histogram: #4263EB;
+    --grey-5: rgba(196, 196, 196, 0.5);
     --shadow: rgba(33, 36, 41, 0.05);
     --calendar: #334D6E;
     --calendar-2: #90A0B7;
