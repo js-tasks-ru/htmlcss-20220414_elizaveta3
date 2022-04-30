@@ -5,6 +5,7 @@
 @import '../../components/page/page.css';
 @import '../../components/container/container.css';
 @import '../../components/cards/card.css';
+@import '../../03-lection1/01-button/button.css';
 
 
 :root {
@@ -21,7 +22,7 @@
     --grey-3: #ACB5BD;
     --grey-4: #495057;
     --histogram: #4263EB;
-    --grey-5: rgba(196, 196, 196, 1);
+    --grey-5: rgba(196, 196, 196, 0.5);
     --shadow: rgba(33, 36, 41, 0.05);
 
 
