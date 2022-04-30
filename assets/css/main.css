@@ -22,6 +22,9 @@
     --grey-4: #495057;
     --histogram: #4263EB;
     --shadow: rgba(33, 36, 41, 0.05);
+    --calendar: #334D6E;
+    --calendar-2: #90A0B7;
+    --calendar-3:rgba(160, 177, 245, 0.2);
 
 
     --error: var(--red);
