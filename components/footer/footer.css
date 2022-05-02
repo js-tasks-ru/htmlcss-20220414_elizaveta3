@@ -33,13 +33,13 @@
     text-align: center;
 }
 
-.footer-inner{
+.footer_inner{
     background-color: var(--primary);
     padding-top: 56px;
     padding-bottom: 56px;
 }
 
-.footer-inner__title{
+.footer_inner .footer__title{
     font-family: 'Inter';
     font-weight: 500;
     font-size: 12px;

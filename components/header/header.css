@@ -13,9 +13,8 @@
     margin: 0;
 }
 
-.header-inner{
+.header_inner{
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: var(--primary);
-    height: 140px;
 }
