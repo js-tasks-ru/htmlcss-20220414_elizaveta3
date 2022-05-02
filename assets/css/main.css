@@ -5,12 +5,15 @@
 @import '../../components/page/page.css';
 @import '../../components/container/container.css';
 @import '../../components/cards/card.css';
+@import '../../components/component-page/component-page.css';
+@import '../../04-lection2/01-histogram/histogram.css';
 @import '../../03-lection1/01-button/button.css';
 
 
 :root {
     --white: #ffffff;
     --black: #212429;
+    --max-black: #000000;
     --pink: #F784AD;
     --purple: #7048E8;
     --dark-purple: #5028C6;
@@ -25,6 +28,7 @@
     --histogram: #4263EB;
     --grey-5: rgba(196, 196, 196, 0.5);
     --shadow: rgba(33, 36, 41, 0.05);
+    
     --calendar: #334D6E;
     --calendar-2: #90A0B7;
     --calendar-3:rgba(160, 177, 245, 0.2);
