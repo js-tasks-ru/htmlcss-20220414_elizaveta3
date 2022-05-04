@@ -8,17 +8,21 @@
     background-color: var(--grey-2);
 }
 
-@media screen and (max-width:400px) {
-    .main-page { background-image: url(../02-background-image/public/forest_400.jpg);}
+@media screen and (max-width:1024px) {
+    .main-page { background-image: url(../02-background-image/public/forest_1024.jpg);}
 }
 
 @media screen and (max-width:768px) {
     .main-page { background-image: url(../02-background-image/public/forest_768.jpg);}
 }
 
-@media screen and (max-width:1024px) {
-    .main-page { background-image: url(../02-background-image/public/forest_1024.jpg);}
+@media screen and (max-width:400px) {
+    .main-page { background-image: url(../02-background-image/public/forest_400.jpg);}
 }
+
+
+
+
 
 
 
