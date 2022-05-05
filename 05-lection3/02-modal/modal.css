@@ -16,7 +16,6 @@
     padding: 32px 38px 40px 40px;
     width: 428px;
     background-color: var(--white);
-    z-index: 10;
     margin: auto;
     border-radius: 8px;
     position: relative;
@@ -26,28 +25,17 @@
     border: none;
     padding: 0;
     cursor: pointer;
+    background-color: var(--white);
 }
 
-.modal__button-close::before{
-    content: "";
-    display: block;
-    background-color: var(--grey-4);
+.modal__icon{
+    width: 24px;
+    height: 24px;
+    color: var(--grey-4);
     position: absolute;
-    width: 12px;
-    height: 1px ;
-    left: 88%;
-    transform: rotate(45deg);
-}
-
-.modal__button-close::after{
-    content: "";
-    display: block;
-    background-color: var(--grey-4);
-    position: absolute;
-    width: 12px;
-    height: 1px ;
-    left: 88%;
-    transform: rotate(-45deg);
+    right: 15px;
+    top: 15px;
+    transform: translate(-50%);
 }
 
 .modal__form{
@@ -64,7 +52,7 @@
 
 .modal__label{
     padding-bottom: 5px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;

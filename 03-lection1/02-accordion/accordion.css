@@ -15,6 +15,7 @@
     border: 1px solid var(--grey-3);
     border-radius: 8px;
     padding: 24px 32px;
+    position: relative;
 }
 
 .accordion__details:last-child{
@@ -23,7 +24,7 @@
 
 .accordion__item-header,
 .accordion__hidden-content{
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -42,9 +43,25 @@
 
 .accordion__item-header::-webkit-details-marker{
     display: none;
-}
+} 
 
 .accordion__details[open] .accordion__item-header{
     margin-bottom: 16px;
 }
+
+.icon-arrow {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    color: var(--grey-4)
+}
+
+.accordion__details[open] .icon-arrow{
+    transform: rotate(180deg) translateY(50%);
+}
+
+
+
 
