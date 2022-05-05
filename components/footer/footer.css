@@ -49,3 +49,9 @@
     color: var(--grey-3);
     margin: 0;
 }
+
+@media screen and (max-width:375px){
+    .footer__discription{
+        max-width: 288px;
+    }
+}
