@@ -26,3 +26,38 @@
     text-align: center;
     margin: 0;
 }
+
+@media screen and (max-width:767px){
+    .card {
+        width: 319px;
+        height: 312px;
+    }
+
+    .card__title{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 4px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .card {
+        width: 164px;
+        height: 231px;
+    }
+
+    .card__title{
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+    
+    .card__text{
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: var(--grey-3);}
+}
