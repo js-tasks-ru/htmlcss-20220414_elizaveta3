@@ -65,6 +65,12 @@
     margin-bottom: 24px;
 }
 
+@media screen and (max-width:767px){
+    .component-page__wrapper{
+        gap:20px;
+    }
+}
+
 @media screen and (max-width:375px){
     .component-page__wrapper{
         display: flex;
@@ -77,3 +83,4 @@
         padding-top: 32px;
     }
 }
+
