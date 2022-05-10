@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
-
-    </body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./input.css">
+</head>
+<body
+    style="display: grid; grid-template-columns: repeat(2, 1fr); width: 730px; column-gap: 30px; row-gap: 16px; height: 0;">
+    <div class="input-group">
+        <label class="input-group__label" for="input">Label</label>
+        <input class="input-group__input" type="text" placeholder="Placeholder" id="input">
+    </div>
+    <div class="input-group">
+        <label class="input-group__label" for="success">Success</label>
+        <input class="input-group__input input-group_is-success" type="text" id="success">
+    </div>
+    <div class="input-group">
+        <label class="input-group__label" for="error">Error</label>
+        <input class="input-group__input input-group_is-error" type="text" id="error">
+    </div>
+</body>
 </html>
