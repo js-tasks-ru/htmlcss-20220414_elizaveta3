@@ -49,16 +49,14 @@
     margin-bottom: 16px;
 }
 
-.icon-arrow {
-    width: 24px;
-    height: 24px;
+.accordion__icon-arrow {
     position: absolute;
     right: 32px;
     top: 32px;
     color: var(--grey-4)
 }
 
-.accordion__details[open] .icon-arrow{
+.accordion__details[open] .accordion__icon-arrow{
     transform: rotate(180deg) translateY(50%);
 }
 

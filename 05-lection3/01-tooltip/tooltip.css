@@ -3,14 +3,9 @@
     position: relative;
 }
 
-.tooltip__icon{
+.tooltip__icon-wrapper{
     cursor: pointer;
     position: relative;
-}
-
-.icon-question{
-    width: 24px;
-    height: 24px;
 }
 
 .tooltip__bubble{
@@ -44,6 +39,6 @@
     transform: translateX(-50%); 
 }
 
-.tooltip__icon:hover + .tooltip__bubble{
+.tooltip__icon-wrapper:hover + .tooltip__bubble{
     display: block;
 }
