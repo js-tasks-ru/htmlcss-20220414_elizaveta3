@@ -1,0 +1,38 @@
+.tabs{
+    border-bottom: 1px solid var(--grey-2);
+}
+
+.tabs__wrapper{
+    position: relative;
+}
+
+.tabs__input{
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+
+.tabs__scroller{
+    display: flex;
+}
+
+.tabs__label:not(:last-child){
+    margin-right: 40px;
+}
+
+.tabs__label{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+    cursor: pointer;
+    padding-bottom: 8px;
+}
+
+.tabs__input:checked ~ .tabs__scroller .tabs__label{
+    border-bottom: 5px solid var(--black);
+}
+
+.tabs__input:disabled ~ .tabs__scroller .tabs__label{
+    color: var(--grey-3);
+}

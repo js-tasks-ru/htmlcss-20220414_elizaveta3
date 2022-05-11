@@ -1,10 +1,13 @@
-.preview{
+.preview{  
+}
+
+.preview__inner{
     background-color: var(--primary);
     padding-top: 68px;
     padding-bottom: 64px;
 }
 
-.preview__inner{
+.preview__wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
