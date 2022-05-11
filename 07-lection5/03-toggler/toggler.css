@@ -19,7 +19,6 @@
     background: var(--white);
     border: 1px solid var(--grey-2);
     border-radius: 16px;
-    margin-right: 12px;
     padding-left: 2px;
     padding-right: 2px;
     display: flex;
@@ -39,6 +38,7 @@
     font-size: 16px;
     line-height: 24px;
     color: var(--grey-4);
+    margin-left: 12px;
 }
 
 .toggle_included{
@@ -72,7 +72,7 @@
 }
 
 .toggle__input:disabled ~ .toggle__state .toggle__circle{
-background: var(--grey-6);
+    background: var(--grey-6);
 }
 
 .toggle__input:focus ~ .toggle__state .toggle__title{
