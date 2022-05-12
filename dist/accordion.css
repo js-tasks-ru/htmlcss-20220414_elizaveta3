@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* Стилизация аккордеона */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 579px;
+}
+.accordion__details {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  border: 1px solid #ACB5BD;
+  border-radius: 8px;
+  padding: 24px 32px;
+  position: relative;
+}
+.accordion__details:last-child {
+  margin-bottom: 0;
+}
+.accordion__item-header, .accordion__hidden-content {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #495057;
+  background-color: #ffffff;
+}
+.accordion__item-header {
+  display: block;
+}
+.accordion__item-header::-webkit-details-marker {
+  display: none;
+}
+.accordion__hidden-content {
+  margin: 0;
+}
+.accordion__details[open] .accordion__item-header {
+  margin-bottom: 16px;
+}
+.accordion__icon-arrow {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  color: #495057;
+}
+.accordion__details[open] .accordion__icon-arrow {
+  transform: rotate(180deg) translateY(50%);
+}
+
+/*# sourceMappingURL=accordion.css.map */

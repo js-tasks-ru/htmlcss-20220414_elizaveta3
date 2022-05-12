@@ -10,7 +10,8 @@
 @import '../../03-lection1/01-button/button.css';
 @import '../../components/icon/icon.css';
 
-:root {
+
+/* :root {
     --white: #ffffff;
     --black: #212429;
     --max-black: #000000;
@@ -44,7 +45,7 @@
     --primary: var(--grey-1);
     --secondary: var(--white);
 }
-
+ */
 html,
 body{
     height: 100%;
