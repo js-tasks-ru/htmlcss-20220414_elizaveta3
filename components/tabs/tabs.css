@@ -45,17 +45,34 @@
     transform: scaleX(0);
 }
 
-.tabs__input[id="#all-tab"]:checked ~ .tabs__scroller .tabs__label[id="#all-tab"],
+.tabs__input[id="#all-tab"]:checked  ~ .tabs__scroller .tabs__label[id="#all-tab"],
 .tabs__input[id="#complex-tab"]:checked ~ .tabs__scroller .tabs__label[id="#complex-tab"],
 .tabs__input[id="#simple-tab"]:checked ~ .tabs__scroller .tabs__label[id="#simple-tab"]{
     color: var(--black);
 }
 
-.tabs__input[id="#all-tab"]:checked ~ .tabs__scroller .tabs__label[id="#all-tab"]::after,
-.tabs__input[id="#complex-tab"]:checked ~ .tabs__scroller .tabs__label[id="#complex-tab"]::after,
-.tabs__input[id="#simple-tab"]:checked ~ .tabs__scroller .tabs__label[id="#simple-tab"]::after{
+.tabs__input[id="#all-tab"]:checked ~ .tabs__scroller .tabs__label[id="#all-tab"] ::after,
+.tabs__input[id="#complex-tab"]:checked ~ .tabs__scroller .tabs__label[id="#complex-tab"] ::after,
+.tabs__input[id="#simple-tab"]:checked ~ .tabs__scroller .tabs__label[id="#simple-tab"] ::after{
     transform: scaleX(1);
 }
+
+.tabs__input[id="#all-tab"]:checked ~ .tabs__scroller .tabs__label[id="#all-tab"] .tabs__content{
+    display: block;
+}
+
+.tabs__input[id="#complex-tab"]:checked ~ .tabs__scroller .tabs__label[id="#complex-tab"] .tabs__content_complex{
+    display: block;
+}
+
+.tabs__input[id="#simple-tab"]:checked ~ .tabs__scroller .tabs__label[id="#simple-tab"] .tabs__content_simple{
+    display: block;
+}
+
+
+
+
+
 
 
 
