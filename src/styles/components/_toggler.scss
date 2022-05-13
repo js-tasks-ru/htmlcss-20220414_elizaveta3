@@ -1,0 +1,88 @@
+@import './variables';
+
+.toggle{
+    position: relative;
+
+    &__input{
+        position: absolute;
+        clip: rect(0,0,0,0);
+    }
+    
+    &__state{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    &__control{
+        width: 52px;
+        height: 28px;
+        background: $white;
+        border: 1px solid $grey-2;
+        border-radius: 16px;
+        padding-left: 2px;
+        padding-right: 2px;
+        display: flex;
+        align-items: center;
+    }
+    
+    &__circle{
+        width: 24px;
+        height: 24px;
+        border-radius: 16px;
+        background: $grey-2;
+    }
+    
+    &__title{
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $grey-4;
+        margin-left: 12px;
+    }
+    
+    &_included{
+        display: none;
+    }
+    
+    &__input:checked ~ &__state &__control{
+        background: $blue;
+        border-color: $blue;
+        justify-content: flex-end; 
+    }
+    
+    &__input:checked ~ &__state &__circle{
+        background: $white;
+    }
+    
+    &__input:checked ~ &__state &__title{
+        display: none;
+    }
+    
+    &__input:checked ~ &__state &_included{
+        display: block;
+    }
+    
+    &__input:disabled ~ &__state &__control{
+        background: $grey-2;
+    }
+    
+    &__input:disabled ~ &__state &__title{
+        color: $grey-2;
+    }
+    
+    &__input:disabled ~ &__state &__circle{
+        background: $grey-6;
+    }
+    
+    &__input:focus ~ &__state &__title{
+        text-decoration: underline;
+    }  
+    
+    &__input:focus ~ &__state &_included{
+        text-decoration: underline;
+    }  
+    
+}
+

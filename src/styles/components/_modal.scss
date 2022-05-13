@@ -1,0 +1,97 @@
+
+@import './_variables';
+
+@mixin text($ff:false,$fw:false,$fs:false,$lh:false) {
+    @if $ff {
+        font-family: $ff, sans-serif;
+    }
+
+    @if $fw{
+        font-weight: $fw;
+    }
+
+    @if $fs {
+        font-size: $fs;
+    }
+
+    @if $lh {
+        line-height: $lh;
+    }
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: $grey-5;
+    display: none;
+
+    &__window{
+        padding: 32px 38px 40px 40px;
+        width: 428px;
+        background-color: $white;
+        margin: auto;
+        border-radius: 8px;
+        position: relative;
+    }
+    
+    &__button-close{
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        background-color: $white;
+    }
+    
+    &__icon{
+        color: $grey-4;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        transform: translate(-50%);
+    }
+    
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+    
+    &__input-row{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__label{
+        padding-bottom: 5px;
+        @include text('Inter',500,12px,18px);
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $grey-3;
+    }
+    
+    &__input{
+        border: 1px solid $grey-2;
+        border-radius: 8px;
+        padding: 17px 0 13px 24px;
+        @include text('Inter',400,20px,26px);
+    
+
+        &::-webkit-input-placeholder{
+        color: $grey-2;
+    }
+    
+        &:-moz-placeholder{
+        color: $grey-2;
+    } 
+    }
+}
+
+
+
+

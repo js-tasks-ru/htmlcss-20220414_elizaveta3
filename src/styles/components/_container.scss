@@ -1,0 +1,25 @@
+@import './_variables';
+
+@mixin container($mw:false) {
+    @if $mw {
+        max-width: $mw;
+    }
+
+    margin: 0 auto;
+    }
+
+
+.container{
+    @include container(1110px);
+
+    @media screen and ($media-s){
+        @include container(731px);
+}
+
+    @media screen and ($media-xs){
+        @include container(344px);
+}
+}
+
+
+

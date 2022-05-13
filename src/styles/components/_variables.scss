@@ -19,14 +19,10 @@
     $shadow-2: 0px 1px 1px rgba(51, 154, 240, 0.1);
     $shadow-3: 0px 1px 1px rgba(240, 61, 62, 0.1);
 
-    
     $calendar: #334D6E;
     $calendar-2: #90A0B7;
     $calendar-3:rgba(160, 177, 245, 0.2);
 
+    $media-s: "max-width:767px";
+    $media-xs: "max-width:375px";
 
-    $error: var(--red);
-    $success: var(--blue);
-
-    $primary: var(--grey-1);
-    $secondary: var(--white);

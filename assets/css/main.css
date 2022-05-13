@@ -1,13 +1,13 @@
 @import '../fonts/fonts.css';
-@import '../../components/header/header.css';
-@import '../../components/preview/preview.css';
-@import '../../components/footer/footer.css';
-@import '../../components/page/page.css';
-@import '../../components/container/container.css';
-@import '../../components/cards/card.css';
-@import '../../components/component-page/component-page.css';
-@import '../../04-lection2/01-histogram/histogram.css';
-@import '../../03-lection1/01-button/button.css';
+@import '../../dist/header.css';
+@import '../../dist/preview.css';
+@import '../../dist/footer.css';
+@import '../../dist/page.css';
+@import '../../dist/container.css';
+@import '../../dist/card.css';
+@import '../../dist/component-page.css';
+@import '../../dist/histogram.css';
+@import '../../dist/button.css';
 @import '../../components/icon/icon.css';
 
 

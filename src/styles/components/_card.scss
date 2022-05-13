@@ -1,0 +1,64 @@
+@import './_variables';
+
+@mixin text($ff:false,$fw:false,$fs:false,$lh:false) {
+    @if $ff {
+        font-family: $ff, sans-serif;
+    }
+
+    @if $fw{
+        font-weight: $fw;
+    }
+
+    @if $fs {
+        font-size: $fs;
+    }
+
+    @if $lh {
+        line-height: $lh;
+    }
+}
+
+.card{
+    width: 350px;
+    height: 367px;
+    background-color: $white;
+    color: $black;
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+    padding: 32px 25px;
+
+    @media screen and ($media-s){
+            width: 319px;
+            height: 312px;}
+
+    @media screen and ($media-xs) {
+            width: 164px;
+            height: 231px;}
+
+    &__title{
+        @include text('Roboto',500,21px,25px);
+        text-align: center;
+        margin: 0;
+        margin-bottom: 6px;
+
+        @media screen and ($media-s){
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 4px;}
+
+            @media screen and ($media-xs) {
+            @include text('Inter',400,16px,24px);
+            margin-bottom: 0;}
+    }
+    
+    &__text{
+        @include text('Roboto',400,16px,19px);
+        text-align: center;
+        margin: 0;
+
+        @media screen and ($media-xs) {
+            @include text('Inter',400,14px,22px);
+            color: $grey-3;}
+    } 
+}
+

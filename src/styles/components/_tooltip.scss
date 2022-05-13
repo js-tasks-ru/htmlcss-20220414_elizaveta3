@@ -1,0 +1,47 @@
+@import './_variables';
+
+.tooltip{
+    display: inline-block;
+    position: relative;
+
+    &__icon-wrapper{
+        cursor: pointer;
+        position: relative;
+    }
+    
+    &__bubble{
+        position: absolute;
+        bottom: calc(100% + 11px);
+        left: 50%;
+        transform: translateX(-50%);
+        background: $blue;
+        box-shadow: $shadow;
+        border-radius: 10px;
+        padding: 13px 21px 8px;
+        color: $grey-2;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        white-space: nowrap;
+        display: none;
+
+        &::after{
+        content: "";
+        width: 0;
+        height: 0;
+        border: 8px solid transparent ;
+        border-top: 7px solid $blue;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%); 
+    }
+    }
+    
+    &__icon-wrapper:hover + &__bubble{
+        display: block;
+    }
+}
+

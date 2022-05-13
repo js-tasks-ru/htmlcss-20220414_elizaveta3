@@ -1,0 +1,89 @@
+@import './_variables';
+
+@mixin text($ff:false,$fw:false,$fs:false,$lh:false) {
+    @if $ff {
+        font-family: $ff, sans-serif;
+    }
+
+    @if $fw{
+        font-weight: $fw;
+    }
+
+    @if $fs {
+        font-size: $fs;
+    }
+
+    @if $lh {
+        line-height: $lh;
+    }
+}
+
+@mixin pad($pt:false,$pb:false) {
+    @if $pt {
+        padding-top: $pt;
+    }
+
+    @if $pb{
+        padding-bottom: $pb;
+    }
+}
+
+.footer{
+    background-color: $white;
+    @include pad(71px,136px);
+
+    @media screen and ($media-s){
+        @include pad(60px,60px);
+    }
+
+    @media screen and ($media-xs){
+        @include pad(50px,50px);
+    }
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    &__title{
+        @include text('Inter',500,38px,48px);
+        margin: 0;
+        margin-bottom: 32px;
+        align-items: center;
+        }
+    
+        &__discription{
+        @include text('Inter',400,16px,24px);
+        margin: 0;
+        max-width: 640px;
+        text-indent: 5px;
+        text-align: center;
+
+        @media screen and ($media-s){
+            max-width: 600px;
+        }
+
+        @media screen and ($media-xs){
+            max-width: 288px;
+        }
+    }
+    
+        &_inner{
+        background-color: $white;
+        @include pad(56px,56px);
+
+        @media screen and ($media-s){
+        @include pad(46px,46px);
+        }
+    }
+    
+        &_inner &__title{
+        @include text('Inter',500,12px,18px);
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $grey-3;
+        margin: 0;
+    }
+}
+

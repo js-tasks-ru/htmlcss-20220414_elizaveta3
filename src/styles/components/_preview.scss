@@ -1,0 +1,43 @@
+@import './variables';
+
+.preview{
+    background-color: $grey-1;
+    padding-top: 68px;
+    padding-bottom: 64px;
+
+    @media screen and ($media-s){
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    @media screen and ($media-xs){
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    &__inner{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+
+        @media screen and ($media-s){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+            justify-items: center;
+        }
+
+        @media screen and ($media-xs){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+    }
+    
+    &__inner-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+}
+
