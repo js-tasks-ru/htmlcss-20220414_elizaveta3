@@ -1,7 +1,4 @@
 /* Стилизация аккордеона */
-@import './variables';
-@import './mixins';
-
 .accordion{
     @include layout(flex, column);
     flex-wrap: wrap;

@@ -1,6 +1,3 @@
-@import './_variables';
-@import './mixins';
-
 .footer{
     background-color: $white;
     @include pad(71px,136px);
