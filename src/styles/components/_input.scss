@@ -1,33 +1,6 @@
 @import './_variables';
+@import './mixins';
 
-@mixin text($ff:false,$fw:false,$fs:false,$lh:false,$cl:false) {
-    @if $ff {
-        font-family: $ff, sans-serif;
-    }
-
-    @if $fw{
-        font-weight: $fw;
-    }
-
-    @if $fs {
-        font-size: $fs;
-    }
-
-    @if $lh {
-        line-height: $lh;
-    }
-
-    @if $cl {
-        color: $cl;
-    }
-}
-
-@mixin condition {
-    background-repeat: no-repeat;
-    background-size: 24px 24px;
-    background-position: center right 16px;
-    
-}
 
 .input-group{
     display: flex;

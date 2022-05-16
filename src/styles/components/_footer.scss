@@ -1,32 +1,5 @@
 @import './_variables';
-
-@mixin text($ff:false,$fw:false,$fs:false,$lh:false) {
-    @if $ff {
-        font-family: $ff, sans-serif;
-    }
-
-    @if $fw{
-        font-weight: $fw;
-    }
-
-    @if $fs {
-        font-size: $fs;
-    }
-
-    @if $lh {
-        line-height: $lh;
-    }
-}
-
-@mixin pad($pt:false,$pb:false) {
-    @if $pt {
-        padding-top: $pt;
-    }
-
-    @if $pb{
-        padding-bottom: $pb;
-    }
-}
+@import './mixins';
 
 .footer{
     background-color: $white;
@@ -47,14 +20,14 @@
     }
     
     &__title{
-        @include text('Inter',500,38px,48px);
+        @include text-2('Inter',500,38px,48px);
         margin: 0;
         margin-bottom: 32px;
         align-items: center;
         }
     
         &__discription{
-        @include text('Inter',400,16px,24px);
+        @include text-2('Inter',400,16px,24px);
         margin: 0;
         max-width: 640px;
         text-indent: 5px;
@@ -79,7 +52,7 @@
     }
     
         &_inner &__title{
-        @include text('Inter',500,12px,18px);
+        @include text-2('Inter',500,12px,18px);
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: $grey-3;

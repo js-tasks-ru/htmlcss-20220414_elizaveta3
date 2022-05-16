@@ -1,22 +1,5 @@
 @import './_variables';
-
-@mixin text($ff:false,$fw:false,$fs:false,$lh:false) {
-    @if $ff {
-        font-family: $ff, sans-serif;
-    }
-
-    @if $fw{
-        font-weight: $fw;
-    }
-
-    @if $fs {
-        font-size: $fs;
-    }
-
-    @if $lh {
-        line-height: $lh;
-    }
-}
+@import './mixins';
 
 .card{
     width: 350px;
@@ -36,7 +19,7 @@
             height: 231px;}
 
     &__title{
-        @include text('Roboto',500,21px,25px);
+        @include text-2('Roboto',500,21px,25px);
         text-align: center;
         margin: 0;
         margin-bottom: 6px;
@@ -47,17 +30,17 @@
             margin-bottom: 4px;}
 
             @media screen and ($media-xs) {
-            @include text('Inter',400,16px,24px);
+            @include text-2('Inter',400,16px,24px);
             margin-bottom: 0;}
     }
     
     &__text{
-        @include text('Roboto',400,16px,19px);
+        @include text-2('Roboto',400,16px,19px);
         text-align: center;
         margin: 0;
 
         @media screen and ($media-xs) {
-            @include text('Inter',400,14px,22px);
+            @include text-2('Inter',400,14px,22px);
             color: $grey-3;}
     } 
 }

@@ -1,13 +1,5 @@
 @import './_variables';
-
-@mixin container($mw:false) {
-    @if $mw {
-        max-width: $mw;
-    }
-
-    margin: 0 auto;
-    }
-
+@import './mixins';
 
 .container{
     @include container(1110px);

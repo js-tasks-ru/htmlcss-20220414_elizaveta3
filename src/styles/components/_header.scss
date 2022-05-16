@@ -1,14 +1,5 @@
 @import './variables';
-
-@mixin pad($pt:false,$pb:false) {
-    @if $pt {
-        padding-top: $pt;
-    }
-
-    @if $pb{
-        padding-bottom: $pb;
-    }
-}
+@import './mixins';
 
 .header{
     background-color: $white;

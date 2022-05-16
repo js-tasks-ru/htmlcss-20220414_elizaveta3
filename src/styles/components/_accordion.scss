@@ -1,16 +1,6 @@
 /* Стилизация аккордеона */
-
-@mixin layout($display:false,$fd:false) {
-    @if $display {
-        display: $display;
-    }
-
-    @if $fd{
-        flex-direction: $fd;
-    }
-}
-
 @import './variables';
+@import './mixins';
 
 .accordion{
     @include layout(flex, column);

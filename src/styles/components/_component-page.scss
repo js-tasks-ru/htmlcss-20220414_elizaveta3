@@ -1,26 +1,5 @@
 @import './_variables';
-
-@mixin text($ff:false,$fw:false,$fs:false,$lh:false,$cl:false) {
-    @if $ff {
-        font-family: $ff, sans-serif;
-    }
-
-    @if $fw{
-        font-weight: $fw;
-    }
-
-    @if $fs {
-        font-size: $fs;
-    }
-
-    @if $lh {
-        line-height: $lh;
-    }
-
-    @if $cl {
-        color: $cl;
-    }
-}
+@import './mixins';
 
 .component-page{
     width: 100%;
