@@ -1,0 +1,14 @@
+.container{
+    @include container(1110px);
+
+    @media screen and ($media-s){
+        @include container(731px);
+}
+
+    @media screen and ($media-xs){
+        @include container(344px);
+}
+}
+
+
+
