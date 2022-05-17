@@ -29,34 +29,132 @@
             </div>
         </header>
         <main class="preview page__main">
-            <div class="container">
-                <div class="preview__inner">
-                    <div class="card preview__inner-card">
-                        <h3 class="card__title">Tooltip</h3>
-                        <p class="card__text">Container</p>
+            <div class="tabs">
+                <div class="tabs__wrapper">
+                    <input class="tabs__input" type="radio" name="tabs" id="all-tab" checked>
+                    <input class="tabs__input" type="radio" name="tabs" id="complex-tab">
+                    <input class="tabs__input" type="radio" name="tabs" id="simple-tab">
+                    <div class="tabs__scroller container">
+                        <ul class="tabs__list">
+                            <li class="tabs__item">
+                                <label class="tabs__label" for="all-tab">All components</label>
+                            </li>
+                            <li class="tabs__item">
+                                <label class="tabs__label" for="complex-tab">Complex</label>
+                            </li>
+                            <li class="tabs__item">
+                                <label class="tabs__label" for="simple-tab">Simple</label>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="card preview__inner-card">
-                        <h3 class="card__title">Custom form elements</h3>
-                        <p class="card__text">Element</p>
+                    <div class="tabs__content tabs__content_all">
+                        <!-- Все компоненты -->
+                        <div class="preview__inner">
+                            <div class="container">
+                                <div class="preview__wrapper">
+                                    <div class="card preview__inner-card">
+                                        <h3 class="card__title">Tooltip</h3>
+                                        <p class="card__text">Container</p>
+                                    </div>
+                                    <div class="card preview__inner-card">
+                                        <h3 class="card__title">Custom form elements</h3>
+                                        <p class="card__text">Element</p>
+                                    </div>
+                                    <div class="card preview__inner-card">
+                                        <h3 class="card__title">Calendar</h3>
+                                        <p class="card__text">Container</p>
+                                    </div>
+                                    <div class="card preview__inner-card">
+                                        <h3 class="card__title">Modal dialog</h3>
+                                        <p class="card__text">Container</p>
+                                    </div>
+                                    <div class="card preview__inner-card">
+                                        <h3 class="card__title">Histogram</h3>
+                                        <p class="card__text">Element</p>
+                                    </div>
+                                    <div class="card preview__inner-card">
+                                        <h3 class="card__title">Avatar</h3>
+                                        <p class="card__text">Element</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card preview__inner-card">
-                        <h3 class="card__title">Calendar</h3>
-                        <p class="card__text">Container</p>
+                    <div class="tabs__content tabs__content_complex">
+                        <!-- Сложные компоненты -->
+                        <div class="preview__inner">
+                            <div class="container">
+                                <div class="preview__wrapper">
+                                    <div class="card preview__inner-card">
+                                        <h3 class="card__title">Modal dialog</h3>
+                                        <p class="card__text">Container</p>
+                                    </div>
+                                    <div class="card preview__inner-card">
+                                        <h3 class="card__title">Histogram</h3>
+                                        <p class="card__text">Element</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card preview__inner-card">
-                        <h3 class="card__title">Modal dialog</h3>
-                        <p class="card__text">Container</p>
-                    </div>
-                    <div class="card preview__inner-card">
-                        <h3 class="card__title">Histogram</h3>
-                        <p class="card__text">Element</p>
-                    </div>
-                    <div class="card preview__inner-card">
-                        <h3 class="card__title">Avatar</h3>
-                        <p class="card__text">Element</p>
+                    <div class="tabs__content tabs__content_simple">
+                        <!-- Простые компоненты -->
+                        <div class="preview__inner">
+                            <div class="container">
+                                <div class="preview__wrapper">
+                                    <div class="card preview__inner-card">
+                                        <h3 class="card__title">Tooltip</h3>
+                                        <p class="card__text">Container</p>
+                                    </div>
+                                    <div class="card preview__inner-card">
+                                        <h3 class="card__title">Avatar</h3>
+                                        <p class="card__text">Element</p>
+                                    </div>
+                                    <div class="card preview__inner-card">
+                                        <h3 class="card__title">Custom form elements</h3>
+                                        <p class="card__text">Element</p>
+                                    </div>
+                                    <div class="card preview__inner-card">
+                                        <h3 class="card__title">Calendar</h3>
+                                        <p class="card__text">Container</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
+            <!--  <div class="preview__inner">
+                <div class="container">
+                    <div class="preview__wrapper">
+                        <div class="card preview__inner-card">
+                            <h3 class="card__title">Tooltip</h3>
+                            <p class="card__text">Container</p>
+                        </div>
+                        <div class="card preview__inner-card">
+                            <h3 class="card__title">Custom form elements</h3>
+                            <p class="card__text">Element</p>
+                        </div>
+                        <div class="card preview__inner-card">
+                            <h3 class="card__title">Calendar</h3>
+                            <p class="card__text">Container</p>
+                        </div>
+                        <div class="card preview__inner-card">
+                            <h3 class="card__title">Modal dialog</h3>
+                            <p class="card__text">Container</p>
+                        </div>
+                        <div class="card preview__inner-card">
+                            <h3 class="card__title">Histogram</h3>
+                            <p class="card__text">Element</p>
+                        </div>
+                        <div class="card preview__inner-card">
+                            <h3 class="card__title">Avatar</h3>
+                            <p class="card__text">Element</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </main>
         <footer class="footer">
             <div class="container footer__wrapper">
