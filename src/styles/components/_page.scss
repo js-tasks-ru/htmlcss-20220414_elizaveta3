@@ -1,0 +1,17 @@
+.page{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &__main{
+        flex-grow: 1;
+    }
+    
+    &_inner{
+        height: 100%;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+}
+
+

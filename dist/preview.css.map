@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../src/styles/components/_preview.scss","../src/styles/components/_variables.scss"],"names":[],"mappings":"AAEA;EACI,kBCMS;EDLT;EACA;;AAEA;EALJ;IAMQ;IACA;;;AAGJ;EAVJ;IAWQ;IACA;;;AAGJ;EACI;EACA;EACA;;AAEA;EALJ;IAMQ;IACA;IACA;IACA;;;AAGJ;EAZJ;IAaQ;IACA;IACA;;;AAIR;EACI;EACA;EACA","file":"preview.css"}

@@ -1,0 +1,48 @@
+.skeleton {
+  padding: 32px 40px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  max-width: 579px;
+  border: 1px solid #ACB5BD;
+  border-radius: 8px;
+  gap: 24px;
+}
+.skeleton__top {
+  display: flex;
+}
+.skeleton__top-rows {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.skeleton__circle {
+  min-width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #DDE2E5;
+  margin-right: 16px;
+}
+.skeleton__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.skeleton__row {
+  background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+  height: 20px;
+}
+.skeleton__row_small {
+  width: 40%;
+}
+.skeleton__row_medium {
+  width: 60%;
+}
+.skeleton__row_full_width {
+  width: 100%;
+}
+.skeleton__row_large {
+  width: 93%;
+}
+
+/*# sourceMappingURL=skeleton.css.map */

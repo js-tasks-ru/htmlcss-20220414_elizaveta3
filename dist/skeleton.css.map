@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../src/styles/components/_skeleton.scss","../src/styles/components/_variables.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;;AAGJ;EACI;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA,kBChBK;EDiBL;;AAGJ;EACI;EACA;EACA;;AAGJ;EACI,YCxBO;EDyBP;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI","file":"skeleton.css"}

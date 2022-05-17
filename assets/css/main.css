@@ -1,16 +1,9 @@
 @import '../fonts/fonts.css';
-@import '../../components/header/header.css';
-@import '../../components/preview/preview.css';
-@import '../../components/footer/footer.css';
-@import '../../components/page/page.css';
-@import '../../components/container/container.css';
-@import '../../components/cards/card.css';
-@import '../../components/component-page/component-page.css';
-@import '../../04-lection2/01-histogram/histogram.css';
-@import '../../03-lection1/01-button/button.css';
+@import '../../dist/styles.css';
 @import '../../components/icon/icon.css';
 
-:root {
+
+/* :root {
     --white: #ffffff;
     --black: #212429;
     --max-black: #000000;
@@ -44,7 +37,7 @@
     --primary: var(--grey-1);
     --secondary: var(--white);
 }
-
+ */
 html,
 body{
     height: 100%;
