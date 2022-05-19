@@ -12,7 +12,12 @@ module.exports = {
         }),
         require('postcss-import'),
         require('postcss-nested'),
+        require('postcss-advanced-variables'),
+        require('postcss-mixins'),
+        require('postcss-inline-comment'),
+        require('postcss-strip-inline-comments'),
         require('autoprefixer'),
         require('cssnano'),
+        
     ],
 }

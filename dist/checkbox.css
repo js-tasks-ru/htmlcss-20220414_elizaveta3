@@ -26,7 +26,7 @@
   display: none;
 }
 .checkbox__title {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -49,5 +49,3 @@
 .checkbox__input:focus ~ .checkbox__state .checkbox__title {
   text-decoration: underline;
 }
-
-/*# sourceMappingURL=checkbox.css.map */

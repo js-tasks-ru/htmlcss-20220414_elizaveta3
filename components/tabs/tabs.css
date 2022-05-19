@@ -1,93 +1,88 @@
 .tabs{
-    border-bottom: 1px solid var(--grey-2);
+  border-bottom: 1px solid var(--grey-2);
 }
 
 .tabs__wrapper{
-    position: relative;
+  position: relative;
 }
 
 .tabs__input{
-    position: absolute;
-    clip: rect(0,0,0,0);
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
 }
 
 .tabs__list{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    list-style-type: none;
-    height: 34px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+  height: 34px;
 }
 
 .tabs__item:not(:last-child){
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 .tabs__label{
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--grey-3);
-    cursor: pointer;
-    padding-bottom: 8px;
-    position: relative;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-3);
+  cursor: pointer;
+  padding-bottom: 8px;
+  position: relative;
 }
 
 .tabs__label::after{
-    position: absolute;
-    content: "";
-    height: 5px;
-    width: 100%;
-    background-color: var(--black);
-    top: 100%;
-    display: block;
-    transform: scaleX(0);
+  position: absolute;
+  content: '';
+  height: 5px;
+  width: 100%;
+  background-color: var(--black);
+  top: 100%;
+  display: block;
+  transform: scaleX(0);
 }
 
 .tabs__content_all,
 .tabs__content_complex,
 .tabs__content_simple{
-    display: none;
+  display: none;
 }
 
-.tabs__input[id="all-tab"]:checked  ~ .tabs__scroller .tabs__label[for="all-tab"],
-.tabs__input[id="complex-tab"]:checked ~ .tabs__scroller .tabs__label[for="complex-tab"],
-.tabs__input[id="simple-tab"]:checked ~ .tabs__scroller .tabs__label[for="simple-tab"]{
-    color: var(--black);
+.tabs__input[id='all-tab']:checked  ~ .tabs__scroller .tabs__label[for='all-tab'],
+.tabs__input[id='complex-tab']:checked ~ .tabs__scroller .tabs__label[for='complex-tab'],
+.tabs__input[id='simple-tab']:checked ~ .tabs__scroller .tabs__label[for='simple-tab']{
+  color: var(--black);
 }
 
 
-.tabs__input[id="all-tab"]:checked ~ .tabs__scroller .tabs__label[for="all-tab"]::after,
-.tabs__input[id="complex-tab"]:checked ~ .tabs__scroller .tabs__label[for="complex-tab"]::after,
-.tabs__input[id="simple-tab"]:checked ~ .tabs__scroller .tabs__label[for="simple-tab"]::after{
-    transform: scaleX(1);
+.tabs__input[id='all-tab']:checked ~ .tabs__scroller .tabs__label[for='all-tab']::after,
+.tabs__input[id='complex-tab']:checked ~ .tabs__scroller .tabs__label[for='complex-tab']::after,
+.tabs__input[id='simple-tab']:checked ~ .tabs__scroller .tabs__label[for='simple-tab']::after{
+  transform: scaleX(1);
 }
 
-.tabs__input[id="all-tab"]:checked ~ .tabs__content_all{
-    display: block;
+.tabs__input[id='all-tab']:checked ~ .tabs__content_all{
+  display: block;
 }
 
-.tabs__input[id="complex-tab"]:checked ~ .tabs__content_complex{
-    display: block;
+.tabs__input[id='complex-tab']:checked ~ .tabs__content_complex{
+  display: block;
 }
 
-.tabs__input[id="simple-tab"]:checked ~ .tabs__content_simple{
-    display: block;
+.tabs__input[id='simple-tab']:checked ~ .tabs__content_simple{
+  display: block;
 }
 
 .tabs__label:hover{
-    color: var(--black);
+  color: var(--black);
 }
 
 .tabs__label:hover::after{
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
-
-
-
-
-
 
 
 

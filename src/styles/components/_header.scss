@@ -1,6 +1,6 @@
 .header{
     background-color: $white;
-    @include pad(24px,77px);
+    @include pad(24px,40px);
 
     @media screen and ($media-xs){
         @include pad(16px,69px);
