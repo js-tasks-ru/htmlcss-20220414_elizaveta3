@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Course Materials",
   "scripts": {
-    "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js"
+    "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js",
+    "lint": "stylelint '**/*.css'",
+    "fix": "stylelint --fix '**/*.css'",
+    "build": "npx sass src/styles/components/index.scss dist/styles.css"
   },
   "husky": {
     "hooks": {
@@ -20,14 +23,27 @@
   "author": "Sergey Zelenov",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.7",
     "chai": "^4.2.0",
     "cross-env": "^7.0.2",
+    "cssnano": "^5.1.7",
     "mocha": "^7.1.2",
-    "saas": "^1.0.0"
+    "postcss": "^8.4.13",
+    "postcss-advanced-variables": "^3.0.1",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.1.0",
+    "postcss-inline-comment": "^3.0.0",
+    "postcss-mixins": "^9.0.2",
+    "postcss-nested": "^5.0.6",
+    "postcss-scss": "^4.0.4",
+    "postcss-strip-inline-comments": "^0.1.5",
+    "precss": "^4.0.0",
+    "prettier": "2.6.2",
+    "saas": "^1.0.0",
+    "stylelint": "^14.8.2"
   },
   "dependencies": {
     "husky": "^6.0.0",
-    "lint-staged": "^10.5.4",
-    "prettier": "^2.2.1"
+    "lint-staged": "^10.5.4"
   }
 }

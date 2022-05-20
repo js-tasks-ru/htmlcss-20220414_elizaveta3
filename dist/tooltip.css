@@ -12,11 +12,11 @@
   left: 50%;
   transform: translateX(-50%);
   background: #4263EB;
-  box-shadow: rgba(33, 36, 41, 0.05);
+  box-shadow: rgba(33, 36, 41, .05);
   border-radius: 10px;
   padding: 13px 21px 8px;
   color: #DDE2E5;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -25,7 +25,7 @@
   display: none;
 }
 .tooltip__bubble::after {
-  content: "";
+  content: '';
   width: 0;
   height: 0;
   border: 8px solid transparent;
@@ -38,5 +38,3 @@
 .tooltip__icon-wrapper:hover + .tooltip__bubble {
   display: block;
 }
-
-/*# sourceMappingURL=tooltip.css.map */

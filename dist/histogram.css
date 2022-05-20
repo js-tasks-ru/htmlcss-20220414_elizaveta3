@@ -18,7 +18,7 @@
   margin-right: 12px;
 }
 .histogram__header-heading {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
@@ -26,17 +26,17 @@
   margin: 0;
 }
 .histogram__header-text {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #212429;
   margin: 0;
-  opacity: 0.8;
+  opacity: .8;
   margin-bottom: 6px;
 }
 .histogram__header-link {
-  font-family: "Inter" sans-serif, sans-serif;
+  font-family: 'Inter' sans-serif, sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
@@ -56,5 +56,3 @@
   flex-grow: 1;
   background-color: #4263EB;
 }
-
-/*# sourceMappingURL=histogram.css.map */

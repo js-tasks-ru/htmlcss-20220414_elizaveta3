@@ -1,66 +1,66 @@
 .histogram{
-    background-color: var(--white);
-    max-width: 354px;
-    padding: 16px 24px 24px 24px;
-    border: 1px solid var(--grey-3);
-    border-radius: 8px;
+  background-color: var(--white);
+  max-width: 354px;
+  padding: 16px 24px 24px 24px;
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
 }
 
 .histogram__header{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 39px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 39px;
 }
 
 .histogram__header-list{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-right: 12px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 12px;
 }
 
 .histogram__header-heading,
 .histogram__header-text{
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    color: var(--black);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: var(--black);
 }
 
 .histogram__header-heading{
-    margin: 0;
-    font-size: 20px;
-    line-height: 26px;
+  margin: 0;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .histogram__header-text{
-    font-size: 16px;
-    line-height: 24px;
-    margin: 0;
-    opacity: 0.8;
-    margin-bottom: 6px;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  opacity: .8;
+  margin-bottom: 6px;
 }
 
 .histogram__header-link{
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    color: var(--histogram);
-    cursor: pointer;
-    white-space: nowrap;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--histogram);
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .histogram__chart{
-    display: flex;
-    align-items: flex-end;
-    width: 100%;
-    height: 50px;
-    gap: 1px;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 50px;
+  gap: 1px;
 }
 
 .histogram__column{
-    flex-basis: 9px;
-    flex-grow: 1;
-    background-color: var(--histogram);
+  flex-basis: 9px;
+  flex-grow: 1;
+  background-color: var(--histogram);
 }

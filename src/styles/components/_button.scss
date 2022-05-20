@@ -1,71 +1,69 @@
 /* Стилизация кнопки */
 .button {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: $white;
-    background-color: $black;
-    box-sizing: border-box;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    transition: opacity 200ms ease-in-out;
-    padding-top: 15px;
-    padding-bottom: 14px;
+  @include text('Roboto', 500, 16px, 19px, $white);
+  background-color: $black;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 200ms ease-in-out;
+  padding-top: 15px;
+  padding-bottom: 14px;
 
-    &_full_width{
-        width: 100%;
-    }
-    
-    &_primary {
-        background-color: $blue;
+  &_full_width {
+    width: 100%;
+  }
 
-        &:hover,
-        &:focus,
-        &:active {
-        background-color: $dark-blue;
+  &_primary {
+    background-color: $blue;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $dark-blue;
     }
 
-        &_primary:disabled{
-        opacity: 0.5;
-        pointer-events:none;
+    &_primary:disabled {
+      opacity: 0.5;
+      pointer-events: none;
     }
-    }
-    
-    &_secondary {
-        background-color: $purple;
+  }
 
-        &:hover,
-        &:focus,
-        &:active{
-        background-color: $dark-purple;
+  &_secondary {
+    background-color: $purple;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $dark-purple;
     }
 
-        &:disabled{
-        opacity: 0.5;
-        pointer-events:none;
+    &:disabled {
+      opacity: 0.5;
+      pointer-events: none;
     }
-    }
-    
-    &_alternate{
-        background-color: $white;
-        color: $grey-4;
-        border: 1px solid $grey-3;
+  }
 
-        &:hover,
-        &:focus,
-        &:active{
-        border: 1px solid $black;
+  &_alternate {
+    background-color: $white;
+    color: $grey-4;
+    border: 1px solid $grey-3;
 
-        &:disabled{
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid $black;
+
+      &:disabled {
         opacity: 0.3;
-        pointer-events:none;
+        pointer-events: none;
+      }
     }
-    }
-    }
+  }
 
+  &_preview {
+    @include text('Roboto', 500, 14px, 16px, $white);
+    padding-top: 7px;
+    padding-bottom: 6px;
+  }
 }
-
-

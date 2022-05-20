@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* Стилизация кнопки */
 .button {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -22,21 +22,25 @@
 .button_primary {
   background-color: #4263EB;
 }
-.button_primary:hover, .button_primary:focus, .button_primary:active {
+.button_primary:hover,
+.button_primary:focus,
+.button_primary:active {
   background-color: #2342C0;
 }
 .button_primary_primary:disabled {
-  opacity: 0.5;
+  opacity: .5;
   pointer-events: none;
 }
 .button_secondary {
   background-color: #7048E8;
 }
-.button_secondary:hover, .button_secondary:focus, .button_secondary:active {
+.button_secondary:hover,
+.button_secondary:focus,
+.button_secondary:active {
   background-color: #5028C6;
 }
 .button_secondary:disabled {
-  opacity: 0.5;
+  opacity: .5;
   pointer-events: none;
 }
 .button_alternate {
@@ -44,12 +48,14 @@
   color: #495057;
   border: 1px solid #ACB5BD;
 }
-.button_alternate:hover, .button_alternate:focus, .button_alternate:active {
+.button_alternate:hover,
+.button_alternate:focus,
+.button_alternate:active {
   border: 1px solid #212429;
 }
-.button_alternate:hover:disabled, .button_alternate:focus:disabled, .button_alternate:active:disabled {
-  opacity: 0.3;
+.button_alternate:hover:disabled,
+.button_alternate:focus:disabled,
+.button_alternate:active:disabled {
+  opacity: .3;
   pointer-events: none;
 }
-
-/*# sourceMappingURL=button.css.map */

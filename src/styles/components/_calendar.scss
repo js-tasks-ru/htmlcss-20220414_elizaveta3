@@ -1,54 +1,85 @@
-.calendar{
+.calendar {
+  background: $white;
+  border: 1px solid $grey-3;
+  border-radius: 8px;
+  max-width: 304px;
+  padding: 28px 26px 0 26px;
+
+  &__title {
+    text-align: center;
+    @include text('Inter', 600, 20px, 24px, $calendar);
+    margin-bottom: 24px;
+  }
+
+  &__wrapper {
+    padding-bottom: 100%;
+    position: relative;
+  }
+
+  &__inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+  }
+
+  &__item {
+    display: grid;
+    place-items: center;
+  }
+
+  &__item-day {
+    @include text('Inter', 400, 14px, 20px, $calendar-2);
+  }
+
+  &__item-date {
+    @include text('Source Sans Pro', 400, 16px, 20px, $calendar);
+  }
+
+  &__item_active {
+    min-width: 36px;
+    background-color: $blue;
+    color: $white;
+  }
+
+  &__item_selected-day {
+    min-width: 36px;
+    background-color: $calendar-3;
+  }
+
+  &_preview_mini {
     background: $white;
     border: 1px solid $grey-3;
     border-radius: 8px;
-    max-width: 304px;
-    padding: 28px 26px;
+    padding: 18px 16px 0 16px;
+    max-width: 200px;
+    width: 200px;
+  }
 
-    &__title{
-        text-align: center;
-        @include text('Inter',600,20px,24px,$calendar);
-        margin-bottom: 24px;
-    }
-    
-    &__wrapper{
-        padding-bottom: 100%;
-        position: relative;
-    }
-    
-    &__inner{
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: repeat(7, 1fr);
-    }
-    
-    &__item{
-        display: grid;
-        place-items: center;
-    }
-    
-    &__item-day{
-        @include text('Inter',400,14px,20px,$calendar-2);
-    }
-    
-    &__item-date{
-        @include text('Source Sans Pro',400,16px,20px,$calendar);
-    }
-    
-    &__item_active{
-        min-width: 36px;
-        background-color: $blue;
-        color: $white;
-    }
-    
-    &__item_selected-day{
-        min-width: 36px;
-        background-color: $calendar-3;
-    }
+  &_preview_mini &__title {
+    @include text('Inter', 400, 14px, 16px, $calendar);
+  }
+
+  &_preview_mini &__item-day {
+    @include text('Inter', 400, 9px, 7px, $calendar-2);
+  }
+
+  &_preview_mini &__item-date {
+    @include text('Inter', 400, 9px, 7px, $calendar-2);
+  }
+
+  &_preview_mini &__item_active {
+    min-width: 20px;
+    background-color: $blue;
+    color: $white;
+  }
+
+  &_preview_mini &__item_selected-day {
+    min-width: 20px;
+    background-color: $calendar-3;
+  }
 }
-

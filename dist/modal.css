@@ -7,7 +7,7 @@
   height: 100%;
   display: grid;
   place-items: center;
-  background-color: rgba(196, 196, 196, 0.5);
+  background-color: rgba(196, 196, 196, .5);
   display: none;
 }
 .modal__window {
@@ -43,11 +43,11 @@
 }
 .modal__label {
   padding-bottom: 5px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  letter-spacing: 0.04em;
+  letter-spacing: .04em;
   text-transform: uppercase;
   color: #ACB5BD;
 }
@@ -55,7 +55,7 @@
   border: 1px solid #DDE2E5;
   border-radius: 8px;
   padding: 17px 0 13px 24px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
@@ -66,5 +66,3 @@
 .modal__input:-moz-placeholder {
   color: #DDE2E5;
 }
-
-/*# sourceMappingURL=modal.css.map */
