@@ -1,96 +1,96 @@
-.tabs{
-    border-bottom: 1px solid $grey-2;
+.tabs {
+  &__wrapper {
+    position: relative;
+  }
 
-    &__wrapper{
-        position: relative;
-    }
-    
-    &__input{
-        position: absolute;
-        clip: rect(0,0,0,0);
-    }
-    
-    &__list{
-        padding: 0;
-        margin: 0;
-        display: flex;
-        list-style-type: none;
-        height: 34px;
-    }
-    
-    &__item:not(:last-child){
-        margin-right: 40px;
-    }
-    
-    &__label{
-        @include text('Inter', 400 , 16px, 24px, $grey-3);
-        cursor: pointer;
-        padding-bottom: 8px;
-        position: relative;
+  &__input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+  }
 
-        &::after{
-        position: absolute;
-        content: "";
-        height: 5px;
-        width: 100%;
-        background-color: $black;
-        top: 100%;
-        display: block;
-        transform: scaleX(0);
+  &__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    height: 34px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  &__label {
+    @include text('Inter', 400, 16px, 24px, $grey-3);
+    cursor: pointer;
+    padding-bottom: 8px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      height: 5px;
+      width: 100%;
+      background-color: $black;
+      top: 100%;
+      display: block;
+      transform: scaleX(0);
     }
 
-        &:hover{
-            color: $black;
-        }
+    &:hover {
+      color: $black;
+    }
 
+    &:hover::after {
+      transform: scaleX(1);
+    }
+  }
 
-        &:hover::after{
-        transform: scaleX(1);
+  &__content_all,
+  &__content_complex,
+  &__content_simple {
+    display: none;
+  }
+
+  &__input[id='all-tab']:checked ~ &__scroller &__label[for='all-tab'],
+  &__input[id='complex-tab']:checked ~ &__scroller &__label[for='complex-tab'],
+  &__input[id='simple-tab']:checked ~ &__scroller &__label[for='simple-tab'] {
+    color: $black;
+  }
+
+  &__input[id='all-tab']:checked ~ &__scroller &__label[for='all-tab']::after,
+  &__input[id='complex-tab']:checked
+    ~ &__scroller
+    &__label[for='complex-tab']::after,
+  &__input[id='simple-tab']:checked
+    ~ &__scroller
+    &__label[for='simple-tab']::after {
+    transform: scaleX(1);
+  }
+
+  &__input[id='all-tab']:checked ~ &__content_all {
+    display: block;
+  }
+
+  &__input[id='complex-tab']:checked ~ &__content_complex {
+    display: block;
+  }
+
+  &__input[id='simple-tab']:checked ~ &__content_simple {
+    display: block;
+  }
+
+  &__scroller_inner {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 113%;
+      height: 1px;
+      background: $grey-2;
+      left: -47px;
     }
-    }
-    
-    
-    &__content_all,
-    &__content_complex,
-    &__content_simple{
-        display: none;
-    }
-    
-    &__input[id="all-tab"]:checked  ~ &__scroller &__label[for="all-tab"],
-    &__input[id="complex-tab"]:checked ~ &__scroller &__label[for="complex-tab"],
-    &__input[id="simple-tab"]:checked ~ &__scroller &__label[for="simple-tab"]{
-        color: $black;
-    }
-    
-    
-    &__input[id="all-tab"]:checked ~ &__scroller &__label[for="all-tab"]::after,
-    &__input[id="complex-tab"]:checked ~ &__scroller &__label[for="complex-tab"]::after,
-    &__input[id="simple-tab"]:checked ~ &__scroller &__label[for="simple-tab"]::after{
-        transform: scaleX(1);
-    }
-    
-    &__input[id="all-tab"]:checked ~ &__content_all{
-        display: block;
-    }
-    
-    &__input[id="complex-tab"]:checked ~ &__content_complex{
-        display: block;
-    }
-    
-    &__input[id="simple-tab"]:checked ~ &__content_simple{
-        display: block;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  }
 }
-
