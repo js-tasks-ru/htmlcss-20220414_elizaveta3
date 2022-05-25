@@ -27,9 +27,13 @@
     width: 229px;
 
     @media screen and ($media-s) {
-      width: 100%;
-      padding-bottom: 43px;
+      display: none;
     }
+  }
+
+  &__menu_burger {
+    width: 100%;
+    padding-bottom: 43px;
   }
 
   &__title {

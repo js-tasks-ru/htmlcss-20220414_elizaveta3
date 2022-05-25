@@ -416,9 +416,12 @@
 }
 @media screen and (max-width:767px) {
   .component-page__menu {
-    width: 100%;
-    padding-bottom: 43px;
+    display: none;
   }
+}
+.component-page__menu_burger {
+  width: 100%;
+  padding-bottom: 43px;
 }
 .component-page__title {
   margin: 0;

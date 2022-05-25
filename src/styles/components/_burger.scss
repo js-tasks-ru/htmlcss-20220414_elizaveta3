@@ -44,9 +44,9 @@
     @media screen and ($media-s) {
       display: block;
     }
+  }
 
-    &[data-open] {
-      transform: none;
-    }
+  &-menu[data-open] {
+    transform: none;
   }
 }
