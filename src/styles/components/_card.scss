@@ -55,8 +55,9 @@
 
     &_grid {
       display: grid;
-      grid-template-columns: repeat(2, auto);
-      column-gap: 52px;
+      grid-template-columns: repeat(3, auto);
+      column-gap: 32px;
+      margin-bottom: 40px;
     }
 
     &_grid_checkbox {
@@ -70,6 +71,21 @@
       display: grid;
       grid-template-columns: repeat(1, auto);
       grid-template-rows: repeat(3, auto);
+      row-gap: 16px;
+    }
+
+    &_grid_toggle {
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+      grid-template-rows: repeat(3, auto);
+      row-gap: 16px;
+    }
+
+    &_grid_input {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+      column-gap: 30px;
       row-gap: 16px;
     }
   }

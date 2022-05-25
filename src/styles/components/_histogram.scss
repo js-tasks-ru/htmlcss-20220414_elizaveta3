@@ -52,11 +52,16 @@
   }
 
   &_preview {
-    width: 100%;
-    max-width: 200px;
+    width: 300px;
+    max-width: 300px;
     padding: 16px;
     background-color: $white;
     border: 1px solid $grey-3;
     border-radius: 8px;
+  }
+
+  &_inner {
+    width: 100%;
+    max-width: 100%;
   }
 }

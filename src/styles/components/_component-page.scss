@@ -1,70 +1,72 @@
-.component-page{
-    width: 100%;
-    background-color: $grey-1;
-    padding-top: 30px;
+.component-page {
+  width: 100%;
+  background-color: $grey-1;
+  @include pad(30px, 30px);
 
-    &__wrapper{
-        display: grid;
-        grid-template-columns: auto 1fr;
-        gap: 56px;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 56px;
 
-        @media screen and ($media-s){
-            gap:20px;
-        }
-
-        @media screen and ($media-xs){
-            display: flex;
-            flex-direction: column;
-            gap: 43px;
+    @media screen and ($media-s) {
+      gap: 20px;
     }
+
+    @media screen and ($media-xs) {
+      display: flex;
+      flex-direction: column;
+      gap: 43px;
+    }
+  }
+
+  &__menu {
+    width: 229px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+    @include text('Inter', 400, 20px, 26px, $max-black);
+  }
+
+  &__list {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    padding-bottom: 4px;
+  }
+
+  &__link {
+    text-decoration: none;
+    @include text('Inter', 400, 14px, 22px, $black);
+  }
+
+  &__content {
+    background-color: $white;
+    box-shadow: 0px 2px 4px $shadow;
+    border-radius: 12px;
+
+    @media screen and ($media-xs) {
+      padding: 0;
+      padding-top: 32px;
+    }
+  }
+
+  &__content-title {
+    @include text('Inter', 400, 28px, 38px, $grey-4);
+    text-align: left;
+    margin: 0;
+    margin-bottom: 58px;
+  }
+
+  &__element {
+    padding: 32px 48px 64px;
+  }
 }
-    
-    &__menu{
-        width: 229px;
-    }
-    
-    &__title{
-        margin: 0;
-        margin-bottom: 16px;
-        @include text('Inter',400,20px,26px,$max-black);
-    }
-    
-    &__list{
-        margin: 0;
-        list-style-type: none;
-        padding: 0;
-
-        &:not(:last-child){
-        margin-bottom: 32px;
-    }
-    }
-    
-    &__item:not(:last-child){
-        padding-bottom: 4px;
-    }
-    
-    &__link{
-        text-decoration: none;
-        @include text('Inter',400,14px,22px,$black);
-    }
-    
-    &__content{
-        background-color: $white;
-        box-shadow: 0px 2px 4px $shadow;
-        border-radius: 12px;
-        padding: 32px 0 64px 42px;
-
-        @media screen and ($media-xs){
-            padding: 0;
-            padding-top: 32px;
-        }
-    }
-    
-    &__content-title{
-        @include text('Inter',400,28px,38px,$grey-4);
-        text-align: left;
-        margin: 0;
-        margin-bottom: 24px;
-    }
-}
-

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+    <div class="page_inner">
+        <header class="header_inner">
+            <div class="container">
+                <a href="../index.html" class="header__link">
+                    <img src="../assets/images/images/logo.svg" class="header__img" alt="логотип." width="110"
+                        height="32">
+                </a>
+            </div>
+        </header>
+        <main class="component-page">
+            <div class="container component-page__wrapper">
+                <div class="component-page__menu">
+                    <h4 class="component-page__title">Complex</h4>
+                    <ul class="component-page__list">
+                        <li class="component-page__item">
+                            <a href="./modal dialog.html" class="component-page__link">Modal dialog</a>
+                        </li>
+                        <li class="component-page__item">
+                            <a href="./histogram.html" class="component-page__link">Histogram</a>
+                        </li>
+                    </ul>
+                    <h4 class="component-page__title">Simple</h4>
+                    <ul class="component-page__list">
+                        <li class="component-page__item">
+                            <a href="./tooltip.html" class="component-page__link">Tooltip</a>
+                        </li>
+                        <li class="component-page__item">
+                            <a href="./avatar.html" class="component-page__link">Avatar</a>
+                        </li>
+                        <li class="component-page__item">
+                            <a href="./custom form elements.html" class="component-page__link">Custom form elements</a>
+                        </li>
+                        <li class="component-page__item">
+                            <a href="./calendar.html" class="component-page__link">Calendar</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="component-page__content">
+                    <div class="component-page__element">
+                        <h3 class="component-page__content-title">Custom form elements</h3>
+                        <div class="card__body_grid">
+                            <div class="card__body_grid_checkbox">
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input">
+                                    <div class="checkbox__state">
+                                        <div class="checkbox__control">
+                                            <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="checkbox__title">Default</div>
+                                    </div>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" checked>
+                                    <div class="checkbox__state">
+                                        <div class="checkbox__control">
+                                            <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="checkbox__title">Checked</div>
+                                    </div>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" disabled>
+                                    <div class="checkbox__state">
+                                        <div class="checkbox__control">
+                                            <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="checkbox__title">Disabled</div>
+                                    </div>
+                            </div>
+                            <div class="card__body_grid_radio">
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" class="radio__input" name="radio">
+                                    <div class="radio__state">
+                                        <div class="radio__control">
+                                            <div class="radio__circle"></div>
+                                        </div>
+                                        <div class="radio__title">Default</div>
+                                    </div>
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" class="radio__input" name="radio" checked>
+                                    <div class="radio__state">
+                                        <div class="radio__control">
+                                            <div class="radio__circle"></div>
+                                        </div>
+                                        <div class="radio__title">Selected</div>
+                                    </div>
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" class="radio__input" name="radio" disabled>
+                                    <div class="radio__state">
+                                        <div class="radio__control">
+                                            <div class="radio__circle"></div>
+                                        </div>
+                                        <div class="radio__title">Disabled</div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="card__body_grid_toggle">
+                                <label class="toggle">
+                                    <input type="checkbox" class="toggle__input" name="toggle">
+                                    <div class="toggle__state">
+                                        <div class="toggle__control">
+                                            <div class="toggle__circle"></div>
+                                        </div>
+                                        <div class="toggle__title">Off</div>
+                                        <div class="toggle__title toggle_included">On</div>
+                                    </div>
+                                </label>
+                                <label class="toggle">
+                                    <input type="checkbox" class="toggle__input" name="toggle" checked>
+                                    <div class="toggle__state">
+                                        <div class="toggle__control">
+                                            <div class="toggle__circle"></div>
+                                        </div>
+                                        <div class="toggle__title">Off</div>
+                                        <div class="toggle__title toggle_included">On</div>
+                                    </div>
+                                </label>
+                                <label class="toggle">
+                                    <input type="checkbox" class="toggle__input" name="toggle" disabled>
+                                    <div class="toggle__state">
+                                        <div class="toggle__control">
+                                            <div class="toggle__circle"></div>
+                                        </div>
+                                        <div class="toggle__title">Disabled</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="card__body_grid_input">
+                            <div class="input-group">
+                                <label class="input-group__label" for="input">Label</label>
+                                <input class="input-group__input" type="text" placeholder="Placeholder" id="input">
+                            </div>
+                            <div class="input-group">
+                                <label class="input-group__label" for="success">Success</label>
+                                <input class="input-group__input input-group_is-success" type="text" id="success">
+                            </div>
+                            <div class="input-group">
+                                <label class="input-group__label" for="error">Error</label>
+                                <input class="input-group__input input-group_is-error" type="text" id="error">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs">
+                        <div class="tabs__wrapper tabs__wrapper_inner">
+                            <input class="tabs__input" type="radio" name="tabs" id="html" checked>
+                            <input class="tabs__input" type="radio" name="tabs" id="css">
+                            <div class="tabs__scroller container tabs__scroller_inner">
+                                <ul class="tabs__list">
+                                    <li class="tabs__item">
+                                        <label class="tabs__label" for="html">HTML</label>
+                                    </li>
+                                    <li class="tabs__item">
+                                        <label class="tabs__label" for="css">CSS</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tabs-inner__content tabs-inner__html">
+
+                            </div>
+                            <div class="tabs-inner__content tabs-inner__css">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <footer class="footer_inner">
+            <div class="container footer__wrapper">
+                <h5 class="footer__title">Reusable component library</h5>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
