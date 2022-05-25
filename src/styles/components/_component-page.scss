@@ -3,6 +3,10 @@
   background-color: $grey-1;
   @include pad(30px, 30px);
 
+  @media screen and ($media-s) {
+    @include pad(16px, 43px);
+  }
+
   &__wrapper {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -21,12 +25,22 @@
 
   &__menu {
     width: 229px;
+
+    @media screen and ($media-s) {
+      width: 100%;
+      padding-bottom: 43px;
+    }
   }
 
   &__title {
     margin: 0;
     margin-bottom: 16px;
     @include text('Inter', 400, 20px, 26px, $max-black);
+
+    @media screen and ($media-s) {
+      padding-top: 24px;
+      border-top: 1px solid $grey-2;
+    }
   }
 
   &__list {
@@ -36,6 +50,10 @@
 
     &:not(:last-child) {
       margin-bottom: 32px;
+
+      @media screen and ($media-s) {
+        margin-bottom: 24px;
+      }
     }
   }
 
@@ -52,11 +70,6 @@
     background-color: $white;
     box-shadow: 0px 2px 4px $shadow;
     border-radius: 12px;
-
-    @media screen and ($media-xs) {
-      padding: 0;
-      padding-top: 32px;
-    }
   }
 
   &__content-title {
@@ -64,9 +77,21 @@
     text-align: left;
     margin: 0;
     margin-bottom: 58px;
+
+    @media screen and ($media-s) {
+      margin-bottom: 34px;
+    }
   }
 
   &__element {
     padding: 32px 48px 64px;
+
+    @media screen and ($media-s) {
+      padding: 44px;
+    }
+
+    @media screen and ($media-xs) {
+      padding: 32px;
+    }
   }
 }

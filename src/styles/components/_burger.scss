@@ -1,0 +1,52 @@
+.burger {
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  margin-right: 93px;
+  display: none;
+
+  @media screen and ($media-s) {
+    display: block;
+  }
+
+  &__button-close {
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-right: 93px;
+  }
+
+  &__button-close::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: $grey-2;
+    border-radius: 50%;
+  }
+
+  &__icon-close {
+    position: absolute;
+  }
+
+  &-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: $grey-7;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(-100vh);
+    transition: transform 200ms linear;
+    display: none;
+    z-index: 9;
+
+    @media screen and ($media-s) {
+      display: block;
+    }
+
+    &[data-open] {
+      transform: none;
+    }
+  }
+}

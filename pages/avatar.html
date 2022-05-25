@@ -11,10 +11,78 @@
     <div class="page_inner">
         <header class="header_inner">
             <div class="container">
-                <a href="../index.html" class="header__link">
-                    <img src="../assets/images/images/logo.svg" class="header__img" alt="логотип." width="110"
-                        height="32">
-                </a>
+                <div class="header_inner_wrapper">
+                    <button class="burger" id="burger-menu-open">
+                        <svg class="icon burger__icon-open">
+                            <use href="../assets/images/svg-sprite/sprite.svg#burger">
+                            </use>
+                        </svg>
+                    </button>
+                    <a href="../index.html" class="header__link">
+                        <img src="../assets/images/images/logo.svg" class="header__img" alt="логотип." width="110"
+                            height="32">
+                    </a>
+                    <div class="burger-menu" id="burger-menu">
+                        <div class="header_inner">
+                            <div class="container">
+                                <div class="header_inner_wrapper">
+                                    <button id="burger-menu-close" class="burger burger__button-close">
+                                        <svg class="icon burger__icon-close">
+                                            <use href="../assets/images/svg-sprite/sprite.svg#close">
+                                            </use>
+                                        </svg>
+                                    </button>
+                                    <a href="../index.html" class="header__link">
+                                        <img src="../assets/images/images/logo.svg" class="header__img" alt="логотип."
+                                            width="110" height="32">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component-page">
+                            <div class="container">
+                                <div class="component-page__menu">
+                                    <label class="toggle">
+                                        <input type="checkbox" class="toggle__input" name="toggle">
+                                        <div class="toggle__state">
+                                            <div class="toggle__title">Light mode</div>
+                                            <div class="toggle__title toggle_included">Dark mode</div>
+                                            <div class="toggle__control">
+                                                <div class="toggle__circle"></div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <h4 class="component-page__title">Complex</h4>
+                                    <ul class="component-page__list">
+                                        <li class="component-page__item">
+                                            <a href="./modal dialog.html" class="component-page__link">Modal dialog</a>
+                                        </li>
+                                        <li class="component-page__item">
+                                            <a href="./histogram.html" class="component-page__link">Histogram</a>
+                                        </li>
+                                    </ul>
+                                    <h4 class="component-page__title">Simple</h4>
+                                    <ul class="component-page__list">
+                                        <li class="component-page__item">
+                                            <a href="./tooltip.html" class="component-page__link">Tooltip</a>
+                                        </li>
+                                        <li class="component-page__item">
+                                            <a href="./avatar.html" class="component-page__link">Avatar</a>
+                                        </li>
+                                        <li class="component-page__item">
+                                            <a href="./custom form elements.html" class="component-page__link">Custom
+                                                form elements</a>
+                                        </li>
+                                        <li class="component-page__item">
+                                            <a href="./calendar.html" class="component-page__link">Calendar</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </header>
         <main class="component-page">
@@ -86,5 +154,6 @@
         </footer>
     </div>
 </body>
+<script src="../09-lection7/01-burger-menu/burger-menu.js"></script>
 
 </html>
