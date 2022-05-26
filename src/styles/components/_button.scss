@@ -6,8 +6,12 @@
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  transition: opacity 200ms ease-in-out;
   padding: 14px 16px;
+  transition: all 200ms ease-in-out;
+
+  &:active {
+    transform: translateY(5%);
+  }
 
   &_full_width {
     width: 100%;

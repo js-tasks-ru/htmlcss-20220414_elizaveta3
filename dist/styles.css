@@ -81,8 +81,11 @@
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  transition: opacity 200ms ease-in-out;
   padding: 14px 16px;
+  transition: all 200ms ease-in-out;
+}
+.button:active {
+  transform: translateY(5%);
 }
 .button_full_width {
   width: 100%;
@@ -401,14 +404,7 @@
 }
 @media screen and (max-width:767px) {
   .component-page__wrapper {
-    gap: 20px;
-  }
-}
-@media screen and (max-width:375px) {
-  .component-page__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 43px;
+    grid-template-columns: 1fr;
   }
 }
 .component-page__menu {
@@ -462,6 +458,9 @@
   line-height: 22px;
   color: #212429;
 }
+.component-page__link:active {
+  color: #D84910;
+}
 .component-page__content {
   background-color: #ffffff;
   box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
@@ -499,18 +498,8 @@
 .container {
   max-width: 1110px;
   margin: 0 auto;
-}
-@media screen and (max-width:767px) {
-  .container {
-    max-width: 720px;
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width:375px) {
-  .container {
-    max-width: 320px;
-    margin: 0 auto;
-  }
+  width: 100%;
+  padding: 0 16px;
 }
 
 .footer {
@@ -663,6 +652,20 @@
   display: flex;
   align-items: center;
 }
+.header__link-navigation {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ACB5BD;
+}
+.header__link-navigation + .header__link-navigation {
+  margin-left: 24px;
+}
+.header__link_is-active {
+  color: #212429;
+}
 @media screen and (max-width:767px) {
   .header__navigation {
     display: none;
@@ -770,6 +773,7 @@
   border: 1px solid #DDE2E5;
   border-radius: 8px;
   padding-left: 24px;
+  transition: all 200ms ease-in-out;
 }
 .input-group__input::-moz-placeholder {
   color: #DDE2E5;
@@ -808,6 +812,7 @@
   align-items: center;
   background-color: rgba(196, 196, 196, 0.5);
   display: none;
+  z-index: 99;
 }
 .modal__window {
   padding: 32px 38px 40px 40px;
@@ -1092,12 +1097,14 @@
   padding-right: 2px;
   display: flex;
   align-items: center;
+  transition: all 0.5s ease;
 }
 .toggle__circle {
   width: 24px;
   height: 24px;
   border-radius: 16px;
   background: #DDE2E5;
+  transition: all 0.5s ease;
 }
 .toggle__title {
   font-family: "Inter";

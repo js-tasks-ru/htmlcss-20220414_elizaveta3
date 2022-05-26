@@ -13,13 +13,7 @@
     gap: 56px;
 
     @media screen and ($media-s) {
-      gap: 20px;
-    }
-
-    @media screen and ($media-xs) {
-      display: flex;
-      flex-direction: column;
-      gap: 43px;
+      grid-template-columns: 1fr;
     }
   }
 
@@ -68,6 +62,10 @@
   &__link {
     text-decoration: none;
     @include text('Inter', 400, 14px, 22px, $black);
+
+    &:active {
+      color: $red-2;
+    }
   }
 
   &__content {

@@ -1,11 +1,5 @@
 .container {
   @include container(1110px);
-
-  @media screen and ($media-s) {
-    @include container(720px);
-  }
-
-  @media screen and ($media-xs) {
-    @include container(320px);
-  }
+  width: 100%;
+  padding: 0 16px;
 }

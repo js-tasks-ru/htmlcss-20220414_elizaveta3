@@ -7,10 +7,7 @@
   }
 
   &__title {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 50px;
-    line-height: 64px;
+    @include text-2('Inter', 500, 50px, 64px);
     margin: 0;
 
     @media screen and ($media-s) {
@@ -66,6 +63,19 @@
       display: flex;
       align-items: center;
     }
+  }
+
+  &__link-navigation {
+    text-decoration: none;
+    @include text('Inter', 400, 16px, 24px, $grey-3);
+
+    & + & {
+      margin-left: 24px;
+    }
+  }
+
+  &__link_is-active {
+    color: $black;
   }
 
   @media screen and ($media-s) {
