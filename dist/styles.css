@@ -684,7 +684,7 @@
 
 .histogram {
   background-color: #ffffff;
-  max-width: 354px;
+  width: 354px;
   padding: 16px 24px 24px 24px;
   border: 1px solid #ACB5BD;
   border-radius: 8px;
@@ -741,8 +741,7 @@
   background-color: #4263EB;
 }
 .histogram_preview {
-  width: 300px;
-  max-width: 300px;
+  width: 100%;
   padding: 16px;
   background-color: #ffffff;
   border: 1px solid #ACB5BD;
