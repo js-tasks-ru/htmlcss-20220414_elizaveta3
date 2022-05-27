@@ -1,15 +1,24 @@
-.burger {
-  padding: 0;
-  border: none;
-  background-color: inherit;
-  margin-right: 93px;
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $grey-7;
+  width: 100vw;
+  height: 100vh;
+  transform: translateX(-100vh);
+  transition: transform 200ms linear;
   display: none;
+  z-index: 999;
 
   @media screen and ($media-s) {
     display: block;
   }
 
   &__button-close {
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    margin-right: 93px;
     position: relative;
     display: grid;
     place-items: center;
@@ -29,24 +38,16 @@
     position: absolute;
   }
 
-  &-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: $grey-7;
-    width: 100vw;
-    height: 100vh;
-    transform: translateX(-100vh);
-    transition: transform 200ms linear;
-    display: none;
-    z-index: 9;
-
-    @media screen and ($media-s) {
-      display: block;
-    }
+  &[data-open] {
+    transform: none;
   }
 
-  &-menu[data-open] {
-    transform: none;
+  &__header {
+    @include pad(20px, 20px);
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+    }
   }
 }

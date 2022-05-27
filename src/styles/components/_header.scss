@@ -2,8 +2,12 @@
   background-color: $white;
   @include pad(24px, 40px);
 
+  @media screen and ($media-s) {
+    @include pad(24px, 24px);
+  }
+
   @media screen and ($media-xs) {
-    @include pad(16px, 69px);
+    @include pad(16px, 16px);
   }
 
   &__title {
@@ -19,7 +23,6 @@
       font-weight: 400;
       font-size: 28px;
       line-height: 38px;
-      max-width: 288px;
     }
   }
 
@@ -52,13 +55,6 @@
       @include pad(16px, 16px);
     }
 
-    & .header__link {
-      @media screen and ($media-s) {
-        display: grid;
-        place-items: center;
-      }
-    }
-
     &_wrapper {
       display: flex;
       align-items: center;
@@ -87,6 +83,18 @@
   @media screen and ($media-xs) {
     &__navigation {
       display: none;
+    }
+  }
+
+  &__mobile-menu-trigger {
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    margin-right: 93px;
+    display: none;
+
+    @media screen and ($media-s) {
+      display: block;
     }
   }
 }

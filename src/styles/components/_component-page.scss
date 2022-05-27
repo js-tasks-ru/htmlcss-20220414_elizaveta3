@@ -23,11 +23,11 @@
     @media screen and ($media-s) {
       display: none;
     }
-  }
 
-  &__menu_burger {
-    width: 100%;
-    padding-bottom: 43px;
+    &_burger {
+      width: 100%;
+      padding-bottom: 43px;
+    }
   }
 
   &__title {

@@ -1,65 +1,64 @@
-.radio{
+.radio {
+  position: relative;
+
+  &__input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  &__state {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__control {
+    width: 28px;
+    height: 28px;
+    background: $white;
+    border: 1px solid $grey-2;
+    border-radius: 14px;
     position: relative;
+  }
 
-    &__input{
-        position: absolute;
-        clip: rect(0,0,0,0);
-    }
-    
-    &__state{
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-    }
-    
-    &__control{
-        width: 28px;
-        height: 28px;
-        background: $white;
-        border: 1px solid $grey-2;
-        border-radius: 14px;
-        position: relative;
-    }
-    
-    &__circle{
-        width: 18px;
-        height: 18px;
-        border-radius: 14px;
-        background: $blue;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: none;
-    }
-    
-    &__title {
-        font-family: 'Inter';
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        color: $grey-4;
-        margin-left: 12px;
-    }
-    
-    &__input:checked ~ &__state &__control{
-        border: 2px solid $blue;
-    }
-    
-    &__input:checked ~ &__state &__circle{
-        display: block;
-    }
-    
-    &__input:disabled ~ &__state &__control{
-        background: $grey-2;
-    }
-    
-    &__input:disabled ~ &__state &__title{
-        color: $grey-2;
-    }
-    
-    &__input:focus ~ &__state &__title{
-        text-decoration: underline;
-    } 
+  &__circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 14px;
+    background: $blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  &__title {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $grey-4;
+    margin-left: 12px;
+  }
+
+  &__input:checked ~ &__state &__control {
+    border: 2px solid $blue;
+  }
+
+  &__input:checked ~ &__state &__circle {
+    display: block;
+  }
+
+  &__input:disabled ~ &__state &__control {
+    background: $grey-2;
+  }
+
+  &__input:disabled ~ &__state &__title {
+    color: $grey-2;
+  }
+
+  &__input:focus ~ &__state &__title {
+    text-decoration: underline;
+  }
 }
-
