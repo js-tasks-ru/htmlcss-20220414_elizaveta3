@@ -3,10 +3,6 @@
   background-color: $grey-1;
   @include pad(30px, 30px);
 
-  @media screen and ($media-s) {
-    @include pad(16px, 43px);
-  }
-
   &__wrapper {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -62,10 +58,6 @@
   &__link {
     text-decoration: none;
     @include text('Inter', 400, 14px, 22px, $black);
-
-    &:active {
-      color: $red-2;
-    }
   }
 
   &__content {

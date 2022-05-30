@@ -11,7 +11,7 @@
     align-items: center;
     cursor: pointer;
 
-    @media screen and ($media-s) {
+    &_burger-menu {
       justify-content: space-between;
       padding-top: 24px;
       border-top: 1px solid $grey-2;
@@ -48,7 +48,7 @@
     color: $grey-4;
     margin-left: 12px;
 
-    @media screen and ($media-s) {
+    &_burger-menu {
       margin: 0;
       margin-right: auto;
     }
