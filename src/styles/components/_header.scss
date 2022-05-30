@@ -34,12 +34,8 @@
 
     @media screen and ($media-s) {
       display: flex;
-      justify-content: center;
-    }
-
-    @media screen and ($media-xs) {
-      display: flex;
-      justify-content: center;
+      align-items: center;
+      justify-content: stretch;
     }
   }
 
