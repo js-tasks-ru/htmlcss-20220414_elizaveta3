@@ -1,78 +1,100 @@
-.header{
-    background-color: $white;
-    @include pad(24px,40px);
+.header {
+  background-color: $white;
+  @include pad(24px, 40px);
 
-    @media screen and ($media-xs){
-        @include pad(16px,69px);
+  @media screen and ($media-s) {
+    @include pad(24px, 24px);
+  }
+
+  @media screen and ($media-xs) {
+    @include pad(16px, 16px);
+  }
+
+  &__title {
+    @include text-2('Inter', 500, 50px, 64px);
+    margin: 0;
+
+    @media screen and ($media-s) {
+      font-size: 44px;
+      text-align: center;
     }
 
-    &__title{
-        font-family: 'Inter', sans-serif;
-        font-weight: 500;
-        font-size: 50px;
-        line-height: 64px;
-        margin: 0;
-
-        @media screen and ($media-s){
-            font-size: 44px;
-            text-align: center;
-        }
-
-        @media screen and ($media-xs){
-            font-weight: 400;
-            font-size: 28px;
-            line-height: 38px;
-            max-width: 288px;
-        }
+    @media screen and ($media-xs) {
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 38px;
     }
-    
-    &__wrapper{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-bottom: 38px;
+  }
 
-        @media screen and ($media-s){
-            display: flex;
-            justify-content: center;
-        }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 38px;
 
-        @media screen and ($media-xs){
-            display: flex;
-            justify-content: center;
-        }
-    }
-    
-    &_inner{
-        @include pad(30px,30px);
-        background-color: $grey-1;
-
-        @media screen and ($media-s){
-            @include pad(20px,20px);  
-        }
-
-        @media screen and ($media-xs){
-            @include pad(16px,16px);
-        }
-
-        & .header__link{
-            @media screen and ($media-s){
-            display: grid;
-            place-items: center;
-            } 
-        }
+    @media screen and ($media-s) {
+      display: flex;
+      justify-content: center;
     }
 
-    @media screen and ($media-s){
-        &__navigation{
-            display: none;
-        }
+    @media screen and ($media-xs) {
+      display: flex;
+      justify-content: center;
     }
-    
-    @media screen and ($media-xs){
-        &__navigation{
-            display: none;
-        }
+  }
+
+  &_inner {
+    @include pad(30px, 30px);
+    background-color: $grey-1;
+
+    @media screen and ($media-s) {
+      @include pad(20px, 20px);
     }
+
+    @media screen and ($media-xs) {
+      @include pad(16px, 16px);
+    }
+
+    &_wrapper {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__link-navigation {
+    text-decoration: none;
+    @include text('Inter', 400, 16px, 24px, $grey-3);
+
+    & + & {
+      margin-left: 24px;
+    }
+  }
+
+  &__link_is-active {
+    color: $black;
+  }
+
+  @media screen and ($media-s) {
+    &__navigation {
+      display: none;
+    }
+  }
+
+  @media screen and ($media-xs) {
+    &__navigation {
+      display: none;
+    }
+  }
+
+  &__mobile-menu-trigger {
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    margin-right: 93px;
+    display: none;
+
+    @media screen and ($media-s) {
+      display: block;
+    }
+  }
 }
-

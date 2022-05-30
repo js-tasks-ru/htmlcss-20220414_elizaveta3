@@ -9,13 +9,8 @@
   text-decoration: none;
 
   @media screen and ($media-s) {
-    width: 319px;
-    height: 312px;
-  }
-
-  @media screen and ($media-xs) {
-    width: 164px;
-    height: 231px;
+    width: auto;
+    height: auto;
   }
 
   &__title {

@@ -1,0 +1,86 @@
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $grey-7;
+  width: 100vw;
+  height: 100vh;
+  transform: translateX(-100vh);
+  transition: transform 200ms linear;
+  display: none;
+  z-index: 999;
+
+  @media screen and ($media-s) {
+    display: block;
+  }
+
+  &__button-close {
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    margin-right: 93px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-right: 93px;
+  }
+
+  &__button-close::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: $grey-2;
+    border-radius: 50%;
+  }
+
+  &__icon-close {
+    position: absolute;
+  }
+
+  &[data-open] {
+    transform: none;
+  }
+
+  &__header {
+    @include pad(20px, 20px);
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__body {
+    width: 100%;
+    background-color: $grey-1;
+    @include pad(16px, 43px);
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+    @include text('Inter', 400, 20px, 26px, $max-black);
+    padding-top: 24px;
+    border-top: 1px solid $grey-2;
+  }
+
+  &__list {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    padding-bottom: 4px;
+  }
+
+  &__link {
+    text-decoration: none;
+    @include text('Inter', 400, 14px, 22px, $black);
+  }
+}
