@@ -22,6 +22,10 @@
 
   &__item:not(:last-child) {
     margin-right: 40px;
+
+    @media screen and ($media-xs) {
+      margin-right: 20px;
+    }
   }
 
   &__label {

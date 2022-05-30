@@ -229,7 +229,7 @@
 }
 
 .card {
-  width: 350px;
+  max-width: 350px;
   height: 367px;
   background-color: #ffffff;
   color: #212429;
@@ -298,11 +298,23 @@
   column-gap: 32px;
   margin-bottom: 40px;
 }
+@media screen and (max-width:767px) {
+  .card__body_grid {
+    grid-template-columns: repeat(1, auto);
+    column-gap: 0;
+    row-gap: 20px;
+  }
+}
 .card__body_grid_checkbox {
   display: grid;
   grid-template-columns: repeat(1, auto);
   grid-template-rows: repeat(3, auto);
   row-gap: 16px;
+}
+@media screen and (max-width:767px) {
+  .card__body_grid_checkbox {
+    row-gap: 10px;
+  }
 }
 .card__body_grid_radio {
   display: grid;
@@ -310,11 +322,21 @@
   grid-template-rows: repeat(3, auto);
   row-gap: 16px;
 }
+@media screen and (max-width:767px) {
+  .card__body_grid_radio {
+    row-gap: 10px;
+  }
+}
 .card__body_grid_toggle {
   display: grid;
   grid-template-columns: repeat(1, auto);
   grid-template-rows: repeat(3, auto);
   row-gap: 16px;
+}
+@media screen and (max-width:767px) {
+  .card__body_grid_toggle {
+    row-gap: 10px;
+  }
 }
 .card__body_grid_input {
   display: grid;
@@ -322,6 +344,11 @@
   width: 100%;
   column-gap: 30px;
   row-gap: 16px;
+}
+@media screen and (max-width:767px) {
+  .card__body_grid_input {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .card__footer {
   margin-top: 25px;
@@ -606,13 +633,8 @@
 @media screen and (max-width:767px) {
   .header__wrapper {
     display: flex;
-    justify-content: center;
-  }
-}
-@media screen and (max-width:375px) {
-  .header__wrapper {
-    display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: stretch;
   }
 }
 .header_inner {
@@ -768,6 +790,7 @@
   border: 1px solid #DDE2E5;
   border-radius: 8px;
   padding-left: 24px;
+  max-width: 350px;
   transition: all 200ms ease-in-out;
 }
 .input-group__input::-moz-placeholder {
@@ -947,7 +970,7 @@
 @media screen and (max-width:767px) {
   .preview__wrapper {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(230px, auto));
     gap: 30px;
   }
 }
@@ -1230,6 +1253,11 @@
 }
 .tabs__item:not(:last-child) {
   margin-right: 40px;
+}
+@media screen and (max-width:375px) {
+  .tabs__item:not(:last-child) {
+    margin-right: 20px;
+  }
 }
 .tabs__label {
   font-family: "Inter", sans-serif;
