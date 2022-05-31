@@ -1,57 +1,77 @@
-.skeleton{
-    padding: 32px 40px 32px 24px;
+.skeleton {
+  padding: 32px 40px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  max-width: 579px;
+  border: 1px solid $grey-3;
+  border-radius: 8px;
+  gap: 24px;
+
+  &__top {
+    display: flex;
+  }
+
+  &__top-rows {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    max-width: 579px;
-    border: 1px solid $grey-3;
-    border-radius: 8px;
-    gap:24px;
+    gap: 8px;
+  }
 
-    &__top{
-        display: flex;
-    }
-    
-    &__top-rows{
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
-    
-    &__circle{
-        min-width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        background-color: $grey-2;
-        margin-right: 16px;
-    }
-    
-    &__bottom{
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
-    
-    &__row{
-        background: $gradient;
-        height: 20px;
-    }
-    
-    &__row_small{
-        width: 40%;
-    }
-    
-    &__row_medium{
-        width: 60%;
-    }
-    
-    &__row_full_width{
-        width: 100%;
-    }
-    
-    &__row_large{
-        width: 93%;
-    }
-    
+  &__circle {
+    min-width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: $gradient;
+    margin-right: 16px;
+    animation-name: backgroundMovement;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    background-size: 200%;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__row {
+    background: $gradient;
+    height: 20px;
+    animation-name: backgroundMovement;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    background-size: 200%;
+  }
+
+  &__row_small {
+    width: 40%;
+  }
+
+  &__row_medium {
+    width: 60%;
+  }
+
+  &__row_full_width {
+    width: 100%;
+  }
+
+  &__row_large {
+    width: 93%;
+  }
 }
 
+@keyframes backgroundMovement {
+  0% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: -100%;
+  }
+}

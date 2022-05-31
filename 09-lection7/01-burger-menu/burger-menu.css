@@ -1,0 +1,82 @@
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(249, 250, 252);
+  width: 100vw;
+  height: 100vh;
+  transform: translateX(-100vh);
+  transition: transform 200ms linear;
+  display: none;
+  z-index: 999;
+}
+
+.burger-menu__button-close {
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  margin-right: 93px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  margin-right: 93px;
+}
+.burger-menu__button-close::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: #dde2e5;
+  border-radius: 50%;
+}
+.burger-menu__icon-close {
+  position: absolute;
+}
+.burger-menu[data-open] {
+  transform: none;
+  display: block;
+}
+.burger-menu__header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.burger-menu__header-wrapper {
+  display: flex;
+  align-items: center;
+}
+.burger-menu__body {
+  width: 100%;
+  background-color: #f9fafc;
+  padding-top: 16px;
+  padding-bottom: 43px;
+}
+.burger-menu__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  padding-top: 24px;
+  border-top: 1px solid #dde2e5;
+}
+.burger-menu__list {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+.burger-menu__list:not(:last-child) {
+  margin-bottom: 24px;
+}
+.burger-menu__item:not(:last-child) {
+  padding-bottom: 4px;
+}
+.burger-menu__link {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #212429;
+}
