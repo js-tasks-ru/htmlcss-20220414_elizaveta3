@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/atom-one-dark-reasonable.min.css">
 </head>
 
 <body>
@@ -45,7 +47,8 @@
                                     <input type="checkbox" class="toggle__input" name="toggle">
                                     <div class="toggle__state toggle__state_burger-menu">
                                         <div class="toggle__title toggle__title_burger-menu">Light mode</div>
-                                        <div class="toggle__title toggle_included toggle__title_burger-menu">Dark mode</div>
+                                        <div class="toggle__title toggle_included toggle__title_burger-menu">Dark mode
+                                        </div>
                                         <div class="toggle__control">
                                             <div class="toggle__circle"></div>
                                         </div>
@@ -134,10 +137,37 @@
                                 </ul>
                             </div>
                             <div class="tabs-inner__content tabs-inner__html">
-
+                                <pre>
+                                    <code class="language-html">
+                                        <div class="avatar">
+                                            <img src="../../01-avatar/public/avatar-200.jpg"  width="102" height="102" alt="Аватарка" class="avatar__img">
+                                        </div>
+                                    </code>
+                                </pre>
                             </div>
                             <div class="tabs-inner__content tabs-inner__css">
-
+                                <pre>
+                                    <code class="language-css">
+                    .avatar {
+                    width: 102px;
+                    height: 102px;
+                    }
+                    .avatar__img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    }
+                    .avatar_preview {
+                    width: 200px;
+                    height: 200px;
+                    }
+                    .avatar_inner_sizes {
+                    width: 200px;
+                    height: 200px;
+                    }
+                                    </code>
+                                </pre>
                             </div>
                         </div>
                     </div>
@@ -153,5 +183,7 @@
     </div>
 </body>
 <script src="../09-lection7/01-burger-menu/burger-menu.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 </html>

@@ -97,4 +97,17 @@
     background: $grey-2;
     left: 0px;
   }
+
+  &-inner__css,
+  &-inner__html {
+    display: none;
+  }
+
+  &__input[id='html']:checked ~ &-inner__html {
+    display: block;
+  }
+
+  &__input[id='css']:checked ~ &-inner__css {
+    display: block;
+  }
 }
