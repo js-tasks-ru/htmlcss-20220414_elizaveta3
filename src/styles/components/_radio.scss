@@ -15,8 +15,8 @@
   &__control {
     width: 28px;
     height: 28px;
-    background: $white;
-    border: 1px solid $grey-2;
+    background: var(--white);
+    border: 1px solid var(--grey-2);
     border-radius: 14px;
     position: relative;
   }
@@ -25,7 +25,7 @@
     width: 18px;
     height: 18px;
     border-radius: 14px;
-    background: $blue;
+    background: var(--blue);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -34,16 +34,12 @@
   }
 
   &__title {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: $grey-4;
+    @include text('Inter', 400, 16px, 24px, var(--grey-4));
     margin-left: 12px;
   }
 
   &__input:checked ~ &__state &__control {
-    border: 2px solid $blue;
+    border: 2px solid var(--blue);
   }
 
   &__input:checked ~ &__state &__circle {
@@ -51,11 +47,11 @@
   }
 
   &__input:disabled ~ &__state &__control {
-    background: $grey-2;
+    background: var(--grey-2);
   }
 
   &__input:disabled ~ &__state &__title {
-    color: $grey-2;
+    color: var(--grey-2);
   }
 
   &__input:focus ~ &__state &__title {

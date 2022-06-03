@@ -1,8 +1,8 @@
 .histogram {
-  background-color: $white;
+  background-color: var(--white);
   width: 354px;
   padding: 16px 24px 24px 24px;
-  border: 1px solid $grey-3;
+  border: 1px solid var(--grey-3);
   border-radius: 8px;
 
   &__header {
@@ -20,19 +20,19 @@
   }
 
   &__header-heading {
-    @include text('Inter', 400, 20px, 26px, $black);
+    @include text('Inter', 400, 20px, 26px, var(--black));
     margin: 0;
   }
 
   &__header-text {
-    @include text('Inter', 400, 16px, 24px, $black);
+    @include text('Inter', 400, 16px, 24px, var(--black));
     margin: 0;
     opacity: 0.8;
     margin-bottom: 6px;
   }
 
   &__header-link {
-    @include text('Inter' sans-serif, 400, 20px, 26px, $histogram);
+    @include text('Inter' sans-serif, 400, 20px, 26px, var(--histogram));
     cursor: pointer;
     white-space: nowrap;
   }
@@ -48,14 +48,14 @@
   &__column {
     flex-basis: 9px;
     flex-grow: 1;
-    background-color: $histogram;
+    background-color: var(--histogram);
   }
 
   &_preview {
     width: 100%;
     padding: 16px;
-    background-color: $white;
-    border: 1px solid $grey-3;
+    background-color:var(--white);
+    border: 1px solid var(--grey-3);
     border-radius: 8px;
   }
 

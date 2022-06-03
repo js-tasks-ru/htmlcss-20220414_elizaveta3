@@ -1,13 +1,13 @@
 .calendar {
-  background: $white;
-  border: 1px solid $grey-3;
+  background: var(--white);
+  border: 1px solid var(--grey-3);
   border-radius: 8px;
   max-width: 304px;
   padding: 28px 26px 0 26px;
 
   &__title {
     text-align: center;
-    @include text('Inter', 600, 20px, 24px, $calendar);
+    @include text('Inter', 600, 20px, 24px, var(--calendar));
     margin-bottom: 24px;
   }
 
@@ -33,27 +33,43 @@
   }
 
   &__item-day {
-    @include text('Inter', 400, 14px, 20px, $calendar-2);
+    @include text('Inter', 400, 14px, 20px, var(--calendar-2));
+
+    @media screen and ($media-xs) {
+      @include text('Inter', 400, 9px, 7px, var(--calendar-2));
+    }
   }
 
   &__item-date {
-    @include text('Source Sans Pro', 400, 16px, 20px, $calendar);
+    @include text('Source Sans Pro', 400, 16px, 20px, var(--calendar-2));
+
+    @media screen and ($media-xs) {
+      @include text('Source Sans Pro', 400, 9px, 7px, var(--calendar-2));
+    }
   }
 
   &__item_active {
     min-width: 36px;
-    background-color: $blue;
-    color: $white;
+    background-color: var(--blue);
+    color: var(--white);
+
+    @media screen and ($media-s) {
+      min-width: 20px;
+    }
   }
 
   &__item_selected-day {
     min-width: 36px;
-    background-color: $calendar-3;
+    background-color: var(--calendar-3);
+
+    @media screen and ($media-s) {
+      min-width: 20px;
+    }
   }
 
   &_preview_mini {
-    background: $white;
-    border: 1px solid $grey-3;
+    background: var(--white);
+    border: 1px solid var(--grey-3);
     border-radius: 8px;
     padding: 18px 16px 0 16px;
     max-width: 200px;
@@ -61,25 +77,25 @@
   }
 
   &_preview_mini &__title {
-    @include text('Inter', 400, 14px, 16px, $calendar);
+    @include text('Inter', 400, 14px, 16px, var(--calendar));
   }
 
   &_preview_mini &__item-day {
-    @include text('Inter', 400, 9px, 7px, $calendar-2);
+    @include text('Inter', 400, 9px, 7px, var(--calendar-2));
   }
 
   &_preview_mini &__item-date {
-    @include text('Inter', 400, 9px, 7px, $calendar-2);
+    @include text('Inter', 400, 9px, 7px, var(--calendar-2));
   }
 
   &_preview_mini &__item_active {
     min-width: 20px;
-    background-color: $blue;
-    color: $white;
+    background-color: var(--blue);
+    color: var(--white);
   }
 
   &_preview_mini &__item_selected-day {
     min-width: 20px;
-    background-color: $calendar-3;
+    background-color: var(--calendar-3);
   }
 }
