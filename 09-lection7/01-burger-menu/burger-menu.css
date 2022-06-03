@@ -7,7 +7,6 @@
   height: 100vh;
   transform: translateX(-100vh);
   transition: transform 200ms linear;
-  display: none;
   z-index: 999;
 }
 
@@ -26,7 +25,7 @@
   display: block;
   width: 32px;
   height: 32px;
-  background-color: #dde2e5;
+  background-color: var(--grey-2);
   border-radius: 50%;
 }
 .burger-menu__icon-close {
@@ -46,7 +45,7 @@
 }
 .burger-menu__body {
   width: 100%;
-  background-color: #f9fafc;
+  background-color: var(--grey-1);
   padding-top: 16px;
   padding-bottom: 43px;
 }
@@ -57,9 +56,9 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
-  color: #000000;
+  color: var(--max-black);
   padding-top: 24px;
-  border-top: 1px solid #dde2e5;
+  border-top: 1px solid var(--grey-2);
 }
 .burger-menu__list {
   margin: 0;
@@ -78,5 +77,5 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  color: #212429;
+  color: var(--black);
 }
