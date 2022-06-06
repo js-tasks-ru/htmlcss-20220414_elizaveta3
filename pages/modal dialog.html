@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/atom-one-dark-reasonable.min.css">
 </head>
 
 <body>
@@ -159,10 +161,148 @@
                                 </ul>
                             </div>
                             <div class="tabs-inner__content tabs-inner__html">
-
+                                <pre>
+                                    <code class="language-html">
+    &lt;button class=&quot;button button_primary&quot; id=&quot;modal-open&quot;&gt;Submit&lt;/button&gt;
+    &lt;div class=&quot;modal&quot; id=&quot;modal&quot;&gt;
+        &lt;div class=&quot;modal__window&quot;&gt;
+            &lt;button class=&quot;modal__button-close&quot; id=&quot;modal-close&quot;&gt;
+                &lt;svg class=&quot;icon modal__icon&quot;&gt;
+                    &lt;use href=&quot;../../assets/images/svg-sprite/sprite.svg#close&quot;&gt;
+                    &lt;/use&gt;
+                &lt;/svg&gt;
+            &lt;/button&gt;
+            &lt;form action=&quot;#&quot; class=&quot;modal__form&quot;&gt;
+                &lt;div class=&quot;modal__input-row&quot;&gt;
+                    &lt;label for=&quot;modal-name&quot; class=&quot;modal__label&quot;&gt;
+                        NAME
+                    &lt;/label&gt;
+                    &lt;input class=&quot;modal__input&quot; type=&quot;text&quot; placeholder=&quot;NAME&quot; id=&quot;modal-name&quot; required&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;modal__input-row&quot;&gt;
+                    &lt;label for=&quot;modal-email&quot; class=&quot;modal__label&quot;&gt;
+                        EMAIL
+                    &lt;/label&gt;
+                    &lt;input class=&quot;modal__input&quot; type=&quot;email&quot; placeholder=&quot;EMAIL&quot; id=&quot;modal-email&quot; required&gt;
+                &lt;/div&gt;
+            &lt;/form&gt;
+            &lt;button class=&quot;button button_primary&quot;&gt;Submit&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                </code>
+                                </pre>
                             </div>
                             <div class="tabs-inner__content tabs-inner__css">
-
+                                <pre>
+                                    <code class="language-css">
+    .modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(196, 196, 196, 0.5);
+    display: none;
+    z-index: 99;
+    }
+    .modal__window {
+    padding: 32px 38px 40px 40px;
+    width: 428px;
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 8px;
+    position: relative;
+    }
+    .modal__button-close {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: #ffffff;
+    }
+    .modal__icon {
+    color: #495057;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    transform: translate(-50%);
+    }
+    .modal__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+    }
+    .modal__input-row {
+    display: flex;
+    flex-direction: column;
+    }
+    .modal__label {
+    padding-bottom: 5px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ACB5BD;
+    }
+    .modal__input {
+    border: 1px solid #DDE2E5;
+    border-radius: 8px;
+    padding: 17px 0 13px 24px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    }
+    .modal__input::-webkit-input-placeholder {
+    color: #DDE2E5;
+    }
+    .modal__input:-moz-placeholder {
+    color: #DDE2E5;
+    }
+    .modal_preview {
+    position: static;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(196, 196, 196, 0.5);
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    }
+    .modal_preview .modal__window {
+    padding: 14px;
+    max-width: 250px;
+    width: 250px;
+    height: 200px;
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 8px;
+    position: relative;
+    }
+    .modal_preview .modal__input {
+    border: 1px solid #DDE2E5;
+    border-radius: 8px;
+    padding: 4px 0 4px 8px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    }
+    .modal_preview .modal__form {
+    gap: 10px;
+    margin-bottom: 12px;
+    }
+    .modal_preview .modal__icon {
+    right: 0;
+    top: 10px;
+    }
+                                    </code>
+                                </pre>
                             </div>
                         </div>
                     </div>
@@ -179,5 +319,6 @@
 </body>
 <script src="../05-lection3/02-modal/index.js"></script>
 <script src="../09-lection7/01-burger-menu/burger-menu.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </html>
