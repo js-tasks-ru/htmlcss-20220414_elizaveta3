@@ -1358,6 +1358,15 @@
   background: #DDE2E5;
   left: 0px;
 }
+.tabs-inner__css, .tabs-inner__html {
+  display: none;
+}
+.tabs__input[id=html]:checked ~ .tabs-inner__html {
+  display: block;
+}
+.tabs__input[id=css]:checked ~ .tabs-inner__css {
+  display: block;
+}
 
 .icon {
   width: 24px;
