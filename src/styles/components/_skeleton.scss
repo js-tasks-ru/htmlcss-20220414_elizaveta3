@@ -22,8 +22,14 @@
     min-width: 64px;
     height: 64px;
     border-radius: 50%;
-    background-color: var(--grey-2);
+    background: var(--gradient);
     margin-right: 16px;
+    animation-name: backgroundMovement;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    background-size: 200%;
   }
 
   &__bottom {
@@ -35,6 +41,12 @@
   &__row {
     background: var(--gradient);
     height: 20px;
+    animation-name: backgroundMovement;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    background-size: 200%;
   }
 
   &__row_small {
@@ -51,5 +63,15 @@
 
   &__row_large {
     width: 93%;
+  }
+}
+
+@keyframes backgroundMovement {
+  0% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: -100%;
   }
 }
