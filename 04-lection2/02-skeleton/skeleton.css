@@ -1,4 +1,4 @@
-.skeleton{
+.skeleton {
   padding: 32px 40px 32px 24px;
   display: flex;
   flex-direction: column;
@@ -8,18 +8,18 @@
   gap: 24px;
 }
 
-.skeleton__top{
+.skeleton__top {
   display: flex;
 }
 
-.skeleton__top-rows{
+.skeleton__top-rows {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.skeleton__circle{
+.skeleton__circle {
   min-width: 64px;
   height: 64px;
   border-radius: 50%;
@@ -27,29 +27,48 @@
   margin-right: 16px;
 }
 
-.skeleton__bottom{
+.skeleton__bottom {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.skeleton__row{
+.skeleton__row {
   background: var(--gradient);
   height: 20px;
 }
 
-.skeleton__row_small{
+.skeleton__circle,
+.skeleton__row {
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: backgroundMovement;
+  animation-timing-function: linear;
+}
+
+.skeleton__row_small {
   width: 40%;
 }
 
-.skeleton__row_medium{
+.skeleton__row_medium {
   width: 60%;
 }
 
-.skeleton__row_full_width{
+.skeleton__row_full_width {
   width: 100%;
 }
 
-.skeleton__row_large{
+.skeleton__row_large {
   width: 93%;
+}
+
+@keyframes backgroundMovement {
+  0% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: -100%;
+  }
 }
