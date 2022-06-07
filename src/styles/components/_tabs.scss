@@ -3,7 +3,7 @@
     position: relative;
 
     &_inner {
-      padding: 0px 48px 64px;
+      padding-bottom: 64px;
     }
   }
 
@@ -18,6 +18,10 @@
     display: flex;
     list-style-type: none;
     height: 34px;
+
+    &_inner {
+      padding: 0 48px;
+    }
   }
 
   &__item:not(:last-child) {
@@ -29,7 +33,7 @@
   }
 
   &__label {
-    @include text('Inter', 400, 16px, 24px, $grey-3);
+    @include text('Inter', 400, 16px, 24px, var(--grey-3));
     cursor: pointer;
     padding-bottom: 8px;
     position: relative;
@@ -39,7 +43,7 @@
       content: '';
       height: 5px;
       width: 100%;
-      background-color: $black;
+      background-color: var(--black);
       top: 100%;
       display: block;
       transform: scaleX(0);
@@ -47,7 +51,7 @@
     }
 
     &:hover {
-      color: $black;
+      color: var(--black);
     }
 
     &:hover::after {
@@ -64,7 +68,7 @@
   &__input[id='all-tab']:checked ~ &__scroller &__label[for='all-tab'],
   &__input[id='complex-tab']:checked ~ &__scroller &__label[for='complex-tab'],
   &__input[id='simple-tab']:checked ~ &__scroller &__label[for='simple-tab'] {
-    color: $black;
+    color: var(--black);
   }
 
   &__input[id='all-tab']:checked ~ &__scroller &__label[for='all-tab']::after,
@@ -89,13 +93,31 @@
     display: block;
   }
 
+  &__scroller {
+    background-color: var(--white);
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 1px;
+      top: 100%;
+      background: var(--grey-2);
+    }
+
+    @media screen and ($media-s) {
+      padding-top: 24px;
+    }
+  }
+
   &__scroller_inner::after {
     content: '';
     position: absolute;
     display: block;
     width: 100%;
     height: 1px;
-    background: $grey-2;
+    background: var(--grey-2);
     left: 0px;
   }
 

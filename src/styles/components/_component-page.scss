@@ -1,6 +1,6 @@
 .component-page {
   width: 100%;
-  background-color: $grey-1;
+  background-color: var(--grey-1);
   @include pad(30px, 30px);
 
   &__wrapper {
@@ -29,11 +29,11 @@
   &__title {
     margin: 0;
     margin-bottom: 16px;
-    @include text('Inter', 400, 20px, 26px, $max-black);
+    @include text('Inter', 400, 20px, 26px, var(--max-black));
 
     @media screen and ($media-s) {
       padding-top: 24px;
-      border-top: 1px solid $grey-2;
+      border-top: 1px solid var(--grey-2);
     }
   }
 
@@ -57,17 +57,17 @@
 
   &__link {
     text-decoration: none;
-    @include text('Inter', 400, 14px, 22px, $black);
+    @include text('Inter', 400, 14px, 22px, var(--black));
   }
 
   &__content {
-    background-color: $white;
-    box-shadow: 0px 2px 4px $shadow;
+    background-color:var(--white);
+    box-shadow: 0px 2px 4px var (--shadow);
     border-radius: 12px;
   }
 
   &__content-title {
-    @include text('Inter', 400, 28px, 38px, $grey-4);
+    @include text('Inter', 400, 28px, 38px, var(--grey-4));
     text-align: left;
     margin: 0;
     margin-bottom: 58px;

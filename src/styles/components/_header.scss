@@ -1,5 +1,5 @@
 .header {
-  background-color: $white;
+  background-color: var(--white);
   @include pad(24px, 40px);
 
   @media screen and ($media-s) {
@@ -10,8 +10,15 @@
     @include pad(16px, 16px);
   }
 
+  &__icon-logo {
+    color: var(--black);
+    stroke: var(--black);
+    width: 110px;
+    height: 32px;
+  }
+
   &__title {
-    @include text-2('Inter', 500, 50px, 64px);
+    @include text('Inter', 500, 50px, 64px, var(--black));
     margin: 0;
 
     @media screen and ($media-s) {
@@ -29,7 +36,7 @@
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
     margin-bottom: 38px;
 
     @media screen and ($media-s) {
@@ -41,7 +48,7 @@
 
   &_inner {
     @include pad(30px, 30px);
-    background-color: $grey-1;
+    background-color: var(--grey-1);
 
     @media screen and ($media-s) {
       @include pad(20px, 20px);
@@ -57,9 +64,13 @@
     }
   }
 
+  &__navigation {
+    margin-left: auto;
+  }
+
   &__link-navigation {
     text-decoration: none;
-    @include text('Inter', 400, 16px, 24px, $grey-3);
+    @include text('Inter', 400, 16px, 24px, var(--grey-3));
 
     & + & {
       margin-left: 24px;
@@ -67,7 +78,7 @@
   }
 
   &__link_is-active {
-    color: $black;
+    color: var(--black);
   }
 
   @media screen and ($media-s) {
@@ -92,5 +103,28 @@
     @media screen and ($media-s) {
       display: block;
     }
+  }
+
+  &__icon-menu-trigger {
+    color: var(--grey-4);
+  }
+
+  &__theme-changer-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 56px;
+
+    @media screen and ($media-s) {
+      display: none;
+    }
+  }
+
+  &__icon-theme-changer-sun {
+    margin-right: 12px;
+    color: var(--grey-3);
+  }
+
+  &__icon-theme-changer-moon {
+    margin-left: 12px;
   }
 }
