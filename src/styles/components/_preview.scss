@@ -1,5 +1,5 @@
 .preview {
-  @media screen and ($media-s) {
+  /* @media screen and ($media-s) {
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -7,10 +7,10 @@
   @media screen and ($media-xs) {
     padding-top: 24px;
     padding-bottom: 24px;
-  }
+  } */
 
   &__inner {
-    background-color: $grey-1;
+    background-color: var(--grey-1);
     padding-top: 68px;
     padding-bottom: 64px;
   }

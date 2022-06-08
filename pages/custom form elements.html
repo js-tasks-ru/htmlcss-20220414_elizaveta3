@@ -21,9 +21,34 @@
                         </svg>
                     </button>
                     <a href="../index.html" class="header__link">
-                        <img src="../assets/images/images/logo.svg" class="header__img" alt="логотип." width="110"
-                            height="32">
+                        <svg class="header__icon-logo">
+                            <use href="../assets/images/svg-sprite/sprite.svg#logo" class="header__logo" alt="логотип.">
+                            </use>
+                        </svg>
                     </a>
+                    <nav class="header__navigation">
+                        <a href="#" class="header__link-navigation header__link_is-active">Components</a>
+                        <a href="#" class="header__link-navigation">About</a>
+                        <a href="#" class="header__link-navigation">Contact</a>
+                    </nav>
+                    <div class="header__theme-changer-wrapper">
+                        <svg class="icon header__icon-theme-changer-sun">
+                            <use href="../assets/images/svg-sprite/sprite.svg#sun">
+                            </use>
+                        </svg>
+                        <label class="togglee">
+                            <input type="checkbox" class="toggle__input" name="toggle" id="theme-changer">
+                            <div class="toggle__state">
+                                <div class="toggle__control">
+                                    <div class="toggle__circle"></div>
+                                </div>
+                            </div>
+                        </label>
+                        <svg class="icon header__icon-theme-changer-moon">
+                            <use href="../assets/images/svg-sprite/sprite.svg#moon">
+                            </use>
+                        </svg>
+                    </div>
                     <div class="burger-menu" id="burger-menu">
                         <div class="burger-menu__header">
                             <div class="container">
@@ -35,8 +60,10 @@
                                         </svg>
                                     </button>
                                     <a href="../index.html" class="burger-menu__logo-link">
-                                        <img src="../assets/images/images/logo.svg" class="burger-menu__logo-img"
-                                            alt="логотип." width="110" height="32">
+                                        <svg class="header__icon-logo">
+                                            <use href="../assets/images/svg-sprite/sprite.svg#logo" class="burger-menu__logo-img" alt="логотип.">
+                                            </use>
+                                        </svg>
                                     </a>
                                 </div>
                             </div>
@@ -239,8 +266,8 @@
                         <div class="tabs__wrapper tabs__wrapper_inner">
                             <input class="tabs__input" type="radio" name="tabs" id="html" checked>
                             <input class="tabs__input" type="radio" name="tabs" id="css">
-                            <div class="tabs__scroller container tabs__scroller_inner">
-                                <ul class="tabs__list">
+                            <div class="tabs__scroller tabs__scroller_inner">
+                                <ul class="tabs__list tabs__list_inner">
                                     <li class="tabs__item">
                                         <label class="tabs__label" for="html">HTML</label>
                                     </li>
@@ -377,5 +404,5 @@
 <script src="../09-lection7/01-burger-menu/burger-menu.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-
+<script src="/10-lection8/01-theme-changer/theme-changer.js"></script>
 </html>

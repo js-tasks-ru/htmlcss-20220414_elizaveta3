@@ -15,8 +15,30 @@
   &__control {
     width: 28px;
     height: 28px;
-    background: $white;
-    border: 1px solid $grey-2;
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+    position: relative;
+  }
+
+  &__input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  &__state {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__control {
+    width: 28px;
+    height: 28px;
+    background: var(--white);
+    border: 1px solid var(--grey-2);
     border-radius: 4px;
     position: relative;
   }
@@ -30,17 +52,13 @@
   }
 
   &__title {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: $grey-4;
+    @include text('Inter', 400, 16px, 24px, var(--grey-4));
     margin-left: 12px;
   }
 
   &__input:checked ~ &__state &__control {
-    background: $blue;
-    border-color: $blue;
+    background: var(--blue);
+    border-color: var(--blue);
     animation: pulse 0.5s;
   }
 
@@ -49,22 +67,23 @@
   }
 
   &__input:disabled ~ &__state &__control {
-    background: $grey-2;
+    background: var(--grey-2);
   }
 
   &__input:disabled ~ &__state &__title {
-    color: $grey-2;
+    color: var(--grey-2);
   }
 
   &__input:focus ~ &__state &__title {
     text-decoration: underline;
   }
-}
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 #bdc3c7;
-  }
-  100% {
-    box-shadow: 0 0 0 1.5rem rgba(189, 195, 199, 0);
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 #bdc3c7;
+    }
+    100% {
+      box-shadow: 0 0 0 1.5rem rgba(189, 195, 199, 0);
+    }
   }
 }

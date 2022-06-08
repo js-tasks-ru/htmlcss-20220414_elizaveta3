@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: $grey-7;
+  background: var(--grey-7);
   width: 100vw;
   height: 100vh;
   transform: translateX(-100vh);
@@ -12,6 +12,13 @@
 
   @media screen and ($media-s) {
     display: block;
+  }
+
+  &__logo-img {
+    color: var(--black);
+    stroke: var(--black);
+    width: 110px;
+    height: 32px;
   }
 
   &__button-close {
@@ -30,7 +37,7 @@
     display: block;
     width: 32px;
     height: 32px;
-    background-color: $grey-2;
+    background-color: var(--grey-2);
     border-radius: 50%;
   }
 
@@ -53,16 +60,16 @@
 
   &__body {
     width: 100%;
-    background-color: $grey-1;
+    background-color: var(--grey-1);
     @include pad(16px, 43px);
   }
 
   &__title {
     margin: 0;
     margin-bottom: 16px;
-    @include text('Inter', 400, 20px, 26px, $max-black);
+    @include text('Inter', 400, 20px, 26px, var(--max-black));
     padding-top: 24px;
-    border-top: 1px solid $grey-2;
+    border-top: 1px solid var(--grey-2);
   }
 
   &__list {
@@ -81,6 +88,6 @@
 
   &__link {
     text-decoration: none;
-    @include text('Inter', 400, 14px, 22px, $black);
+    @include text('Inter', 400, 14px, 22px, var(--black));
   }
 }

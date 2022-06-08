@@ -20,14 +20,34 @@
                         </svg>
                     </button>
                     <a href="#" class="header__link">
-                        <img src="/assets/images/images/logo.svg" class="header__img" alt="логотип." width="110"
-                            height="32">
+                        <svg class="header__icon-logo">
+                            <use href="../assets/images/svg-sprite/sprite.svg#logo" class="header__logo" alt="логотип.">
+                            </use>
+                        </svg>
                     </a>
                     <nav class="header__navigation">
                         <a href="#" class="header__link-navigation header__link_is-active">Components</a>
                         <a href="#" class="header__link-navigation">About</a>
                         <a href="#" class="header__link-navigation">Contact</a>
                     </nav>
+                    <div class="header__theme-changer-wrapper">
+                        <svg class="icon header__icon-theme-changer-sun">
+                            <use href="./assets/images/svg-sprite/sprite.svg#sun">
+                            </use>
+                        </svg>
+                        <label class="togglee">
+                            <input type="checkbox" class="toggle__input" name="toggle" id="theme-changer">
+                            <div class="toggle__state">
+                                <div class="toggle__control">
+                                    <div class="toggle__circle"></div>
+                                </div>
+                            </div>
+                        </label>
+                        <svg class="icon header__icon-theme-changer-moon">
+                            <use href="./assets/images/svg-sprite/sprite.svg#moon">
+                            </use>
+                        </svg>
+                    </div>
                 </div>
                 <h1 class="header__title">
                     Reusable component library
@@ -43,8 +63,10 @@
                                     </svg>
                                 </button>
                                 <a href="../index.html" class="burger-menu__logo-link">
-                                    <img src="../assets/images/images/logo.svg" class="burger-menu__logo-img"
-                                        alt="логотип." width="110" height="32">
+                                    <svg class="header__icon-logo">
+                                        <use href="../assets/images/svg-sprite/sprite.svg#logo" class="burger-menu__logo-img" alt="логотип.">
+                                        </use>
+                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -52,7 +74,7 @@
                     <div class="burger-menu__body">
                         <div class="container">
                             <label class="toggle">
-                                <input type="checkbox" class="toggle__input" name="toggle">
+                                <input type="checkbox" class="toggle__input" name="toggle" id="theme-changer">
                                 <div class="toggle__state toggle__state_burger-menu">
                                     <div class="toggle__title toggle__title_burger-menu">Light mode</div>
                                     <div class="toggle__title toggle_included toggle__title_burger-menu">Dark mode</div>
@@ -97,18 +119,20 @@
                     <input class="tabs__input" type="radio" name="tabs" id="all-tab" checked>
                     <input class="tabs__input" type="radio" name="tabs" id="complex-tab">
                     <input class="tabs__input" type="radio" name="tabs" id="simple-tab">
-                    <div class="tabs__scroller container">
-                        <ul class="tabs__list">
-                            <li class="tabs__item">
-                                <label class="tabs__label" for="all-tab">All components</label>
-                            </li>
-                            <li class="tabs__item">
-                                <label class="tabs__label" for="complex-tab">Complex</label>
-                            </li>
-                            <li class="tabs__item">
-                                <label class="tabs__label" for="simple-tab">Simple</label>
-                            </li>
-                        </ul>
+                    <div class="tabs__scroller">
+                        <div class="container">
+                            <ul class="tabs__list">
+                                <li class="tabs__item">
+                                    <label class="tabs__label" for="all-tab">All components</label>
+                                </li>
+                                <li class="tabs__item">
+                                    <label class="tabs__label" for="complex-tab">Complex</label>
+                                </li>
+                                <li class="tabs__item">
+                                    <label class="tabs__label" for="simple-tab">Simple</label>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="tabs__content tabs__content_all">
                         <!-- Все компоненты -->
@@ -120,7 +144,7 @@
                                             <div class="card__body">
                                                 <div class="tooltip tooltip_preview">
                                                     <div class="tooltip__icon-wrapper">
-                                                        <svg class="icon">
+                                                        <svg class="icon tooltip__icon-question">
                                                             <use
                                                                 href="../../assets/images/svg-sprite/sprite.svg#question">
                                                             </use>
@@ -784,5 +808,6 @@
     </div>
 </body>
 <script src="../09-lection7/01-burger-menu/burger-menu.js"></script>
+<script src="/10-lection8/01-theme-changer/theme-changer.js"></script>
 
 </html>
