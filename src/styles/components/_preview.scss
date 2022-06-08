@@ -26,11 +26,23 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    margin-bottom: 32px;
 
     @media screen and ($media-s) {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(230px, auto));
       gap: 30px;
     }
+  }
+
+  &__container_skeleton {
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+    @include text('Inter', 400, 28px, 30px, var(--grey-2));
   }
 }

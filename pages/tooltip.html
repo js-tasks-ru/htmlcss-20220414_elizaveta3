@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/atom-one-dark-reasonable.min.css">
 </head>
 
 <body>
@@ -168,10 +170,102 @@
                                 </ul>
                             </div>
                             <div class="tabs-inner__content tabs-inner__html">
-
+                                <pre>
+                                    <code class="language-html">
+    &lt;div class=&quot;tooltip&quot;&gt;
+    &lt;div class=&quot;tooltip__icon-wrapper&quot;&gt;
+        &lt;svg class=&quot;icon&quot;&gt;
+            &lt;use href=&quot;../../assets/images/svg-sprite/sprite.svg#question&quot;&gt;
+            &lt;/use&gt;
+        &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tooltip__bubble&quot;&gt;
+        Helper Text
+    &lt;/div&gt;
+    &lt;/div&gt;
+                                </code>
+                                </pre>
                             </div>
                             <div class="tabs-inner__content tabs-inner__css">
-
+                                <pre>
+                                    <code class="language-css">
+    .tooltip {
+    display: inline-block;
+    position: relative;
+    }
+    .tooltip__icon-wrapper {
+    cursor: pointer;
+    position: relative;
+    }
+    .tooltip__bubble {
+    position: absolute;
+    bottom: calc(100% + 11px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4263EB;
+    box-shadow: rgba(33, 36, 41, 0.05);
+    border-radius: 10px;
+    padding: 13px 21px 8px;
+    color: #DDE2E5;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    white-space: nowrap;
+    display: none;
+    }
+    .tooltip__bubble::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-top: 7px solid #4263EB;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+    .tooltip__icon-wrapper:hover + .tooltip__bubble {
+    display: block;
+    }
+    .tooltip_preview {
+    transform: translateY(100%);
+    }
+    .tooltip__bubble_preview {
+    position: absolute;
+    bottom: calc(100% + 11px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4263EB;
+    box-shadow: rgba(33, 36, 41, 0.05);
+    border-radius: 10px;
+    padding: 13px 21px 8px;
+    color: #DDE2E5;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    white-space: nowrap;
+    }
+    .tooltip__bubble_preview::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-top: 7px solid #4263EB;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+    .tooltip_inner {
+    margin: 30px 0px 0px 35px;
+    }
+                                          
+                                    </code>
+                                </pre>
                             </div>
                         </div>
                     </div>
@@ -187,5 +281,7 @@
     </div>
 </body>
 <script src="../09-lection7/01-burger-menu/burger-menu.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 <script src="/10-lection8/01-theme-changer/theme-changer.js"></script>
 </html>

@@ -42,6 +42,7 @@
   border-radius: 8px;
   padding: 24px 32px;
   position: relative;
+  background-color: var(--white);
 }
 .accordion__details:last-child {
   margin-bottom: 0;
@@ -1096,6 +1097,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  margin-bottom: 32px;
 }
 @media screen and (max-width:767px) {
   .preview__wrapper {
@@ -1103,6 +1105,19 @@
     grid-template-columns: repeat(auto-fill, minmax(230px, auto));
     gap: 30px;
   }
+}
+.preview__container_skeleton {
+  margin-bottom: 32px;
+}
+.preview__title {
+  margin: 0;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 30px;
+  color: var(--grey-2);
 }
 
 .radio {
