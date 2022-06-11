@@ -1,6 +1,6 @@
-const changer = document.getElementById('theme-changer-burger');
-const html = document.documentElement;
+const changer2 = document.getElementById('theme-changer-burger');
+const html2 = document.documentElement;
 
-changer.addEventListener('change', function() {
-    html.toggleAttribute('data-theme-dark');
+changer2.addEventListener('change', function () {
+  html2.toggleAttribute('data-theme-dark');
 });
