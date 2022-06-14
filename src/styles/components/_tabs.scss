@@ -122,6 +122,11 @@
     display: none;
   }
 
+  &-inner__language-html,
+  &-inner__language-css {
+    max-width: 100vw;
+  }
+
   &__input[id='html']:checked ~ &-inner__html {
     display: block;
   }
