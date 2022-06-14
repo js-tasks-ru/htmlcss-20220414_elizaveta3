@@ -726,7 +726,8 @@
   .header__wrapper {
     display: flex;
     align-items: center;
-    justify-content: stretch;
+    justify-content: center;
+    position: relative;
   }
 }
 .header_inner {
@@ -748,7 +749,8 @@
 }
 .header_inner_wrapper {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 .header__navigation {
   margin-left: auto;
@@ -781,8 +783,12 @@
   padding: 0;
   border: none;
   background-color: inherit;
-  margin-right: 93px;
   display: none;
+  content: "";
+  left: 0;
+  top: 50%;
+  position: absolute;
+  transform: translate(0, -50%);
 }
 @media screen and (max-width:767px) {
   .header__mobile-menu-trigger {
