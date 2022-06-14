@@ -284,7 +284,7 @@
 }
 
 .card {
-  max-width: 350px;
+  max-width: 100%;
   height: 367px;
   background-color: var(--white);
   color: var(--black);
@@ -726,7 +726,8 @@
   .header__wrapper {
     display: flex;
     align-items: center;
-    justify-content: stretch;
+    justify-content: center;
+    position: relative;
   }
 }
 .header_inner {
@@ -748,7 +749,9 @@
 }
 .header_inner_wrapper {
   display: flex;
+  justify-content: center;
   align-items: center;
+  position: relative;
 }
 .header__navigation {
   margin-left: auto;
@@ -781,8 +784,12 @@
   padding: 0;
   border: none;
   background-color: inherit;
-  margin-right: 93px;
   display: none;
+  content: "";
+  left: 0;
+  top: 50%;
+  position: absolute;
+  transform: translate(0, -50%);
 }
 @media screen and (max-width:767px) {
   .header__mobile-menu-trigger {
@@ -1032,7 +1039,7 @@
 .modal_preview .modal__window {
   padding: 14px;
   max-width: 250px;
-  width: 250px;
+  width: 100%;
   height: 200px;
   background-color: var(--white);
   margin: auto;
@@ -1098,6 +1105,11 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-bottom: 32px;
+}
+@media screen and (max-width:992px) {
+  .preview__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media screen and (max-width:767px) {
   .preview__wrapper {
@@ -1406,9 +1418,6 @@
 .tabs__wrapper {
   position: relative;
 }
-.tabs__wrapper_inner {
-  padding-bottom: 64px;
-}
 .tabs__input {
   position: absolute;
   clip: rect(0, 0, 0, 0);
@@ -1505,11 +1514,20 @@
 .tabs-inner__css, .tabs-inner__html {
   display: none;
 }
+.tabs-inner__language-html, .tabs-inner__language-css {
+  max-width: 100vw;
+}
 .tabs__input[id=html]:checked ~ .tabs-inner__html {
   display: block;
 }
 .tabs__input[id=css]:checked ~ .tabs-inner__css {
   display: block;
+}
+.tabs__input[id=html]:checked ~ .tabs__scroller .tabs__label[for=html]::after, .tabs__input[id=css]:checked ~ .tabs__scroller .tabs__label[for=css]::after {
+  transform: scaleX(1);
+}
+.tabs__input[id=html]:checked ~ .tabs__scroller .tabs__label[for=html], .tabs__input[id=css]:checked ~ .tabs__scroller .tabs__label[for=css] {
+  color: var(--black);
 }
 
 .icon {

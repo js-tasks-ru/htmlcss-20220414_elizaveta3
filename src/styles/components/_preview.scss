@@ -28,6 +28,10 @@
     gap: 30px;
     margin-bottom: 32px;
 
+    @media screen and ($media-m) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     @media screen and ($media-s) {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(230px, auto));

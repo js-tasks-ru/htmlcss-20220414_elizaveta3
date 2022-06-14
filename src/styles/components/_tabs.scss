@@ -1,10 +1,6 @@
 .tabs {
   &__wrapper {
     position: relative;
-
-    &_inner {
-      padding-bottom: 64px;
-    }
   }
 
   &__input {
@@ -126,11 +122,26 @@
     display: none;
   }
 
+  &-inner__language-html,
+  &-inner__language-css {
+    max-width: 100vw;
+  }
+
   &__input[id='html']:checked ~ &-inner__html {
     display: block;
   }
 
   &__input[id='css']:checked ~ &-inner__css {
     display: block;
+  }
+
+  &__input[id='html']:checked ~ &__scroller &__label[for='html']::after,
+  &__input[id='css']:checked ~ &__scroller &__label[for='css']::after {
+    transform: scaleX(1);
+  }
+
+  &__input[id='html']:checked ~ &__scroller &__label[for='html'],
+  &__input[id='css']:checked ~ &__scroller &__label[for='css'] {
+    color: var(--black);
   }
 }
