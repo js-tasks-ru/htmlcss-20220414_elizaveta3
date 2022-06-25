@@ -1545,6 +1545,7 @@
   transform: translateX(-100vh);
   transition: transform 200ms linear;
   display: none;
+  visibility: hidden;
   z-index: 999;
 }
 @media screen and (max-width:767px) {
@@ -1581,6 +1582,7 @@
 }
 .burger-menu[data-open] {
   transform: none;
+  visibility: visible;
 }
 .burger-menu__header {
   padding-top: 20px;
