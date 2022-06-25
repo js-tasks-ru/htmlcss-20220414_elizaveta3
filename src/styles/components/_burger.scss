@@ -8,6 +8,7 @@
   transform: translateX(-100vh);
   transition: transform 200ms linear;
   display: none;
+  visibility: hidden;
   z-index: 999;
 
   @media screen and ($media-s) {
@@ -47,6 +48,7 @@
 
   &[data-open] {
     transform: none;
+    visibility: visible;
   }
 
   &__header {
