@@ -811,10 +811,13 @@
 }
 .header__icon-theme-changer-sun {
   margin-right: 12px;
-  color: var(--grey-3);
+  color: var(--grey-4);
+  fill: transparent;
 }
 .header__icon-theme-changer-moon {
   margin-left: 12px;
+  color: var(--grey-3);
+  fill: transparent;
 }
 
 .histogram {
@@ -1510,6 +1513,9 @@
   height: 1px;
   background: var(--grey-2);
   left: 0px;
+}
+.tabs-inner__content {
+  max-width: 800px;
 }
 .tabs-inner__css, .tabs-inner__html {
   display: none;

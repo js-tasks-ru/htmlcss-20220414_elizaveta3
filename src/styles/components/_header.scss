@@ -128,10 +128,13 @@
 
   &__icon-theme-changer-sun {
     margin-right: 12px;
-    color: var(--grey-3);
+    color: var(--grey-4);
+    fill: transparent;
   }
 
   &__icon-theme-changer-moon {
     margin-left: 12px;
+    color: var(--grey-3);
+    fill: transparent;
   }
 }

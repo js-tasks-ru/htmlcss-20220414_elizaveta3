@@ -117,6 +117,10 @@
     left: 0px;
   }
 
+  &-inner__content {
+    max-width: 800px;
+  }
+
   &-inner__css,
   &-inner__html {
     display: none;
