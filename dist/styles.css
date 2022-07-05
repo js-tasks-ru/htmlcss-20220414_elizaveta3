@@ -560,6 +560,7 @@
   background-color: var(--white);
   box-shadow: 0px 2px 4px var --shadow;
   border-radius: 12px;
+  overflow: hidden;
 }
 .component-page__content-title {
   font-family: "Inter", sans-serif;
@@ -1545,9 +1546,9 @@
   position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   background: var(--grey-7);
-  width: 100vw;
-  height: 100vh;
   transform: translateX(-100vh);
   transition: transform 200ms linear;
   display: none;

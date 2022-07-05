@@ -61,9 +61,10 @@
   }
 
   &__content {
-    background-color:var(--white);
+    background-color: var(--white);
     box-shadow: 0px 2px 4px var (--shadow);
     border-radius: 12px;
+    overflow: hidden;
   }
 
   &__content-title {
