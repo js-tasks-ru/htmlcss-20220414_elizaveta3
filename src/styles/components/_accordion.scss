@@ -21,7 +21,7 @@
 
   &__item-header,
   &__hidden-content {
-    @include text('Inter', 400, 16px, 24px, var(--grey-4));
+    @include text('Inter', 400, 16px, 24px, --grey-4);
     background-color:var(--white);
   }
 

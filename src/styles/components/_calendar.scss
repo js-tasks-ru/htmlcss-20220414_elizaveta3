@@ -7,7 +7,7 @@
 
   &__title {
     text-align: center;
-    @include text('Inter', 600, 20px, 24px, var(--calendar));
+    @include text('Inter', 600, 20px, 24px, --calendar);
     margin-bottom: 24px;
   }
 
@@ -33,18 +33,18 @@
   }
 
   &__item-day {
-    @include text('Inter', 400, 14px, 20px, var(--calendar-2));
+    @include text('Inter', 400, 14px, 20px, --calendar-2);
 
     @media screen and ($media-xs) {
-      @include text('Inter', 400, 9px, 7px, var(--calendar-2));
+      @include text('Inter', 400, 9px, 7px, --calendar-2);
     }
   }
 
   &__item-date {
-    @include text('Source Sans Pro', 400, 16px, 20px, var(--calendar-2));
+    @include text('Source Sans Pro', 400, 16px, 20px, --calendar-2);
 
     @media screen and ($media-xs) {
-      @include text('Source Sans Pro', 400, 9px, 7px, var(--calendar-2));
+      @include text('Source Sans Pro', 400, 9px, 7px, --calendar-2);
     }
   }
 
@@ -77,15 +77,15 @@
   }
 
   &_preview_mini &__title {
-    @include text('Inter', 400, 14px, 16px, var(--calendar));
+    @include text('Inter', 400, 14px, 16px, --calendar);
   }
 
   &_preview_mini &__item-day {
-    @include text('Inter', 400, 9px, 7px, var(--calendar-2));
+    @include text('Inter', 400, 9px, 7px, --calendar-2);
   }
 
   &_preview_mini &__item-date {
-    @include text('Inter', 400, 9px, 7px, var(--calendar-2));
+    @include text('Inter', 400, 9px, 7px, --calendar-2);
   }
 
   &_preview_mini &__item_active {

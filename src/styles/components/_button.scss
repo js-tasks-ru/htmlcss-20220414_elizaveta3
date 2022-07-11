@@ -1,6 +1,6 @@
 /* Стилизация кнопки */
 .button {
-  @include text('Roboto', 500, 16px, 19px, var(--white));
+  @include text('Roboto', 500, 16px, 19px, --white);
   background-color: var(--black);
   box-sizing: border-box;
   border-radius: 8px;
@@ -65,7 +65,7 @@
   }
 
   &_preview {
-    @include text('Roboto', 500, 14px, 16px, var(--white));
+    @include text('Roboto', 500, 14px, 16px, --white);
     padding-top: 7px;
     padding-bottom: 6px;
   }

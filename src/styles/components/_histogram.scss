@@ -20,19 +20,19 @@
   }
 
   &__header-heading {
-    @include text('Inter', 400, 20px, 26px, var(--black));
+    @include text('Inter', 400, 20px, 26px, --black);
     margin: 0;
   }
 
   &__header-text {
-    @include text('Inter', 400, 16px, 24px, var(--black));
+    @include text('Inter', 400, 16px, 24px, --black);
     margin: 0;
     opacity: 0.8;
     margin-bottom: 6px;
   }
 
   &__header-link {
-    @include text('Inter' sans-serif, 400, 20px, 26px, var(--histogram));
+    @include text('Inter' sans-serif, 400, 20px, 26px, --histogram);
     cursor: pointer;
     white-space: nowrap;
   }

@@ -52,7 +52,7 @@
   }
 
   &__title {
-    @include text('Inter', 400, 16px, 24px, var(--grey-4));
+    @include text('Inter', 400, 16px, 24px, --grey-4);
     margin-left: 12px;
   }
 
