@@ -29,7 +29,7 @@
   &__title {
     margin: 0;
     margin-bottom: 16px;
-    @include text('Inter', 400, 20px, 26px, var(--max-black));
+    @include text('Inter', 400, 20px, 26px, --max-black);
 
     @media screen and ($media-s) {
       padding-top: 24px;
@@ -57,7 +57,7 @@
 
   &__link {
     text-decoration: none;
-    @include text('Inter', 400, 14px, 22px, var(--black));
+    @include text('Inter', 400, 14px, 22px, --black);
   }
 
   &__content {
@@ -68,7 +68,7 @@
   }
 
   &__content-title {
-    @include text('Inter', 400, 28px, 38px, var(--grey-4));
+    @include text('Inter', 400, 28px, 38px, --grey-4);
     text-align: left;
     margin: 0;
     margin-bottom: 58px;

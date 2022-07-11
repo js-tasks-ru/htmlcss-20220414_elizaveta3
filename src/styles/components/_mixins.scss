@@ -44,7 +44,7 @@
   }
 
   @if $cl {
-    color: $cl;
+    color: var(#{$cl});
   }
 }
 

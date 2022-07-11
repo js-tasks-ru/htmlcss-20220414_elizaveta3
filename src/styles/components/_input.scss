@@ -4,14 +4,14 @@
 
   &__label {
     margin-bottom: 5px;
-    @include text('Inter', 500, 12px, 18px, var(--grey-3));
+    @include text('Inter', 500, 12px, 18px, --grey-3);
     letter-spacing: 0.04em;
     text-transform: uppercase;
   }
 
   &__input {
     padding: 0;
-    @include text('Inter', 400, 20px, 26px, var(--grey-4));
+    @include text('Inter', 400, 20px, 26px, --grey-4);
     background: var(--white);
     height: 56px;
     border: 1px solid var(--grey-2);

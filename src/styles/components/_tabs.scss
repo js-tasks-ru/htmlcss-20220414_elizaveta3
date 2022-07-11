@@ -29,7 +29,7 @@
   }
 
   &__label {
-    @include text('Inter', 400, 16px, 24px, var(--grey-3));
+    @include text('Inter', 400, 16px, 24px, --grey-3);
     cursor: pointer;
     padding-bottom: 8px;
     position: relative;

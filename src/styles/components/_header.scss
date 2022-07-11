@@ -18,7 +18,7 @@
   }
 
   &__title {
-    @include text('Inter', 500, 50px, 64px, var(--black));
+    @include text('Inter', 500, 50px, 64px, --black);
     margin: 0;
 
     @media screen and ($media-s) {
@@ -73,7 +73,7 @@
 
   &__link-navigation {
     text-decoration: none;
-    @include text('Inter', 400, 16px, 24px, var(--grey-3));
+    @include text('Inter', 400, 16px, 24px, --grey-3);
 
     & + & {
       margin-left: 24px;

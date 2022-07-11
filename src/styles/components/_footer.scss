@@ -17,14 +17,14 @@
   }
 
   &__title {
-    @include text('Inter', 500, 38px, 48px, var(--black));
+    @include text('Inter', 500, 38px, 48px, --black);
     margin: 0;
     margin-bottom: 32px;
     align-items: center;
   }
 
   &__discription {
-    @include text('Inter', 400, 16px, 24px, var(--black));
+    @include text('Inter', 400, 16px, 24px, --black);
     margin: 0;
     max-width: 640px;
     text-indent: 5px;
