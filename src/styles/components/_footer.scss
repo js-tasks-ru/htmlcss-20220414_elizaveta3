@@ -2,11 +2,11 @@
   background-color: var(--white);
   @include pad(71px, 136px);
 
-  @media screen and ($media-s) {
+  @media screen and (--small-viewport) {
     @include pad(60px, 60px);
   }
 
-  @media screen and ($media-xs) {
+  @media screen and (--extra-small-viewport) {
     @include pad(50px, 50px);
   }
 
@@ -30,11 +30,11 @@
     text-indent: 5px;
     text-align: center;
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       max-width: 600px;
     }
 
-    @media screen and ($media-xs) {
+    @media screen and (--extra-small-viewport) {
       max-width: 288px;
     }
   }
@@ -43,7 +43,7 @@
     background-color: var(--grey-1);
     @include pad(26px, 56px);
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       @include pad(16px, 46px);
     }
   }

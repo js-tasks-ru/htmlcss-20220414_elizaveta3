@@ -23,7 +23,7 @@
   &__item:not(:last-child) {
     margin-right: 40px;
 
-    @media screen and ($media-xs) {
+    @media screen and (--extra-small-viewport) {
       margin-right: 20px;
     }
   }
@@ -102,7 +102,7 @@
       background: var(--grey-2);
     }
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       padding-top: 24px;
     }
   }

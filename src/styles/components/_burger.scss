@@ -11,7 +11,7 @@
   visibility: hidden;
   z-index: 999;
 
-  @media screen and ($media-s) {
+  @media screen and (--small-viewport) {
     display: block;
   }
 

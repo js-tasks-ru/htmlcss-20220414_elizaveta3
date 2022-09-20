@@ -15,10 +15,10 @@ module.exports = {
     require('postcss-advanced-variables'),
     require('postcss-mixins'),
     require('postcss-inline-comment'),
-    require('postcss-cssnext'),
+    require('postcss-custom-media'),
     require('postcss-strip-inline-comments'),
     require('postcss-at-rules-variables'),
     require('autoprefixer'),
-    require('cssnano'),
+    require('cssnano')
   ],
 };

@@ -18,11 +18,11 @@
     gap: 30px;
     margin-bottom: 32px;
 
-    @media screen and ($media-m) {
+    @media screen and (--medium-viewport) {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(230px, auto));
       gap: 30px;

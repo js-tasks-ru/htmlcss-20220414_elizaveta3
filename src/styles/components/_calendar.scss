@@ -35,7 +35,7 @@
   &__item-day {
     @include text('Inter', 400, 14px, 20px, --calendar-2);
 
-    @media screen and ($media-xs) {
+    @media screen and (--extra-small-viewport) {
       @include text('Inter', 400, 9px, 7px, --calendar-2);
     }
   }
@@ -43,7 +43,7 @@
   &__item-date {
     @include text('Source Sans Pro', 400, 16px, 20px, --calendar-2);
 
-    @media screen and ($media-xs) {
+    @media screen and (--extra-small-viewport) {
       @include text('Source Sans Pro', 400, 9px, 7px, --calendar-2);
     }
   }
@@ -53,7 +53,7 @@
     background-color: var(--blue);
     color: var(--white);
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       min-width: 20px;
     }
   }
@@ -62,7 +62,7 @@
     min-width: 36px;
     background-color: var(--calendar-3);
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       min-width: 20px;
     }
   }

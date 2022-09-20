@@ -8,7 +8,7 @@
     grid-template-columns: auto 1fr;
     gap: 56px;
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       grid-template-columns: 1fr;
     }
   }
@@ -16,7 +16,7 @@
   &__menu {
     width: 229px;
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       display: none;
     }
 
@@ -31,7 +31,7 @@
     margin-bottom: 16px;
     @include text('Inter', 400, 20px, 26px, --max-black);
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       padding-top: 24px;
       border-top: 1px solid var(--grey-2);
     }
@@ -45,7 +45,7 @@
     &:not(:last-child) {
       margin-bottom: 32px;
 
-      @media screen and ($media-s) {
+      @media screen and (--small-viewport) {
         margin-bottom: 24px;
       }
     }
@@ -73,7 +73,7 @@
     margin: 0;
     margin-bottom: 58px;
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       margin-bottom: 34px;
     }
   }
@@ -81,11 +81,11 @@
   &__element {
     padding: 32px 48px 64px;
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       padding: 44px;
     }
 
-    @media screen and ($media-xs) {
+    @media screen and (--extra-small-viewport) {
       padding: 32px;
     }
   }

@@ -17,7 +17,12 @@
   --grey-3: #acb5bd;
   --grey-4: #495057;
   --gradient: linear-gradient(
-    92.51deg, #dde2e5 6.44%, #e2e6e8 38.47%, #f3f5f5 56.48%, #e3e7ea 77.5%, #dde2e5 102.52%
+    92.51deg,
+    #dde2e5 6.44%,
+    #e2e6e8 38.47%,
+    #f3f5f5 56.48%,
+    #e3e7ea 77.5%,
+    #dde2e5 102.52%
   );
   --histogram: #4263eb;
   --grey-5: rgba(196, 196, 196, 0.5);
@@ -48,7 +53,12 @@ html[data-theme-dark] {
   --grey-3: #acb5bd;
   --grey-4: #f9fafc;
   --gradient: linear-gradient(
-    92.51deg, #dde2e5 6.44%, #e2e6e8 38.47%, #f3f5f5 56.48%, #e3e7ea 77.5%, #dde2e5 102.52%
+    92.51deg,
+    #dde2e5 6.44%,
+    #e2e6e8 38.47%,
+    #f3f5f5 56.48%,
+    #e3e7ea 77.5%,
+    #dde2e5 102.52%
   );
   --histogram: #4263eb;
   --grey-5: rgba(196, 196, 196, 0.5);
