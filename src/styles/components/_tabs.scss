@@ -23,13 +23,13 @@
   &__item:not(:last-child) {
     margin-right: 40px;
 
-    @media screen and ($media-xs) {
+    @media screen and (--extra-small-viewport) {
       margin-right: 20px;
     }
   }
 
   &__label {
-    @include text('Inter', 400, 16px, 24px, var(--grey-3));
+    @include text('Inter', 400, 16px, 24px, --grey-3);
     cursor: pointer;
     padding-bottom: 8px;
     position: relative;
@@ -102,7 +102,7 @@
       background: var(--grey-2);
     }
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       padding-top: 24px;
     }
   }
@@ -115,6 +115,10 @@
     height: 1px;
     background: var(--grey-2);
     left: 0px;
+  }
+
+  &-inner__content {
+    max-width: 800px;
   }
 
   &-inner__css,

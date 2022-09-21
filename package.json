@@ -6,7 +6,8 @@
     "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js",
     "lint": "stylelint '**/*.css'",
     "fix": "stylelint --fix '**/*.css'",
-    "build": "npx sass src/styles/components/index.scss dist/styles.css"
+    "build": "npx sass src/styles/components/index.scss dist/styles.css",
+    "postcss": "npx postcss src/styles/components/index.scss -o dist/style.min.css"
   },
   "husky": {
     "hooks": {
@@ -29,9 +30,13 @@
     "cssnano": "^5.1.7",
     "highlight.js": "^11.5.1",
     "mocha": "^7.1.2",
-    "postcss": "^8.4.13",
+    "postcss": "^8.4.14",
     "postcss-advanced-variables": "^3.0.1",
+    "postcss-at-rules-variables": "^0.3.0",
     "postcss-cli": "^9.1.0",
+    "postcss-css-variables": "^0.18.0",
+    "postcss-cssnext": "^3.1.1",
+    "postcss-custom-media": "^8.0.2",
     "postcss-import": "^14.1.0",
     "postcss-inline-comment": "^3.0.0",
     "postcss-mixins": "^9.0.2",

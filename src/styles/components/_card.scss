@@ -8,7 +8,7 @@
   padding: 32px 25px;
   text-decoration: none;
 
-  @media screen and ($media-s) {
+  @media screen and (--small-viewport) {
     width: auto;
     height: auto;
   }
@@ -19,13 +19,13 @@
     margin: 0;
     margin-bottom: 6px;
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       font-size: 18px;
       line-height: 24px;
       margin-bottom: 4px;
     }
 
-    @media screen and ($media-xs) {
+    @media screen and (--extra-small-viewport) {
       @include text-2('Inter', 400, 16px, 24px);
       margin-bottom: 0;
     }
@@ -36,7 +36,7 @@
     text-align: center;
     margin: 0;
 
-    @media screen and ($media-xs) {
+    @media screen and (--extra-small-viewport) {
       @include text-2('Inter', 400, 14px, 22px);
       color: var(--grey-3);
     }
@@ -54,7 +54,7 @@
       column-gap: 32px;
       margin-bottom: 40px;
 
-      @media screen and ($media-s) {
+      @media screen and (--small-viewport) {
         grid-template-columns: repeat(1, auto);
         column-gap: 0;
         row-gap: 20px;
@@ -67,7 +67,7 @@
       grid-template-rows: repeat(3, auto);
       row-gap: 16px;
 
-      @media screen and ($media-s) {
+      @media screen and (--small-viewport) {
         row-gap: 10px;
       }
     }
@@ -78,7 +78,7 @@
       grid-template-rows: repeat(3, auto);
       row-gap: 16px;
 
-      @media screen and ($media-s) {
+      @media screen and (--small-viewport) {
         row-gap: 10px;
       }
     }
@@ -89,7 +89,7 @@
       grid-template-rows: repeat(3, auto);
       row-gap: 16px;
 
-      @media screen and ($media-s) {
+      @media screen and (--small-viewport) {
         row-gap: 10px;
       }
     }
@@ -101,7 +101,7 @@
       column-gap: 30px;
       row-gap: 16px;
 
-      @media screen and ($media-s) {
+      @media screen and (--small-viewport) {
         grid-template-columns: repeat(1, 1fr);
       }
     }

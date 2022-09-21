@@ -8,7 +8,7 @@
     grid-template-columns: auto 1fr;
     gap: 56px;
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       grid-template-columns: 1fr;
     }
   }
@@ -16,7 +16,7 @@
   &__menu {
     width: 229px;
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       display: none;
     }
 
@@ -29,9 +29,9 @@
   &__title {
     margin: 0;
     margin-bottom: 16px;
-    @include text('Inter', 400, 20px, 26px, var(--max-black));
+    @include text('Inter', 400, 20px, 26px, --max-black);
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       padding-top: 24px;
       border-top: 1px solid var(--grey-2);
     }
@@ -45,7 +45,7 @@
     &:not(:last-child) {
       margin-bottom: 32px;
 
-      @media screen and ($media-s) {
+      @media screen and (--small-viewport) {
         margin-bottom: 24px;
       }
     }
@@ -57,22 +57,23 @@
 
   &__link {
     text-decoration: none;
-    @include text('Inter', 400, 14px, 22px, var(--black));
+    @include text('Inter', 400, 14px, 22px, --black);
   }
 
   &__content {
-    background-color:var(--white);
+    background-color: var(--white);
     box-shadow: 0px 2px 4px var (--shadow);
     border-radius: 12px;
+    overflow: hidden;
   }
 
   &__content-title {
-    @include text('Inter', 400, 28px, 38px, var(--grey-4));
+    @include text('Inter', 400, 28px, 38px, --grey-4);
     text-align: left;
     margin: 0;
     margin-bottom: 58px;
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       margin-bottom: 34px;
     }
   }
@@ -80,11 +81,11 @@
   &__element {
     padding: 32px 48px 64px;
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       padding: 44px;
     }
 
-    @media screen and ($media-xs) {
+    @media screen and (--extra-small-viewport) {
       padding: 32px;
     }
   }

@@ -2,11 +2,11 @@
   background-color: var(--white);
   @include pad(71px, 136px);
 
-  @media screen and ($media-s) {
+  @media screen and (--small-viewport) {
     @include pad(60px, 60px);
   }
 
-  @media screen and ($media-xs) {
+  @media screen and (--extra-small-viewport) {
     @include pad(50px, 50px);
   }
 
@@ -17,24 +17,24 @@
   }
 
   &__title {
-    @include text('Inter', 500, 38px, 48px, var(--black));
+    @include text('Inter', 500, 38px, 48px, --black);
     margin: 0;
     margin-bottom: 32px;
     align-items: center;
   }
 
   &__discription {
-    @include text('Inter', 400, 16px, 24px, var(--black));
+    @include text('Inter', 400, 16px, 24px, --black);
     margin: 0;
     max-width: 640px;
     text-indent: 5px;
     text-align: center;
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       max-width: 600px;
     }
 
-    @media screen and ($media-xs) {
+    @media screen and (--extra-small-viewport) {
       max-width: 288px;
     }
   }
@@ -43,7 +43,7 @@
     background-color: var(--grey-1);
     @include pad(26px, 56px);
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       @include pad(16px, 46px);
     }
   }

@@ -2,11 +2,11 @@
   background-color: var(--white);
   @include pad(24px, 40px);
 
-  @media screen and ($media-s) {
+  @media screen and (--small-viewport) {
     @include pad(24px, 24px);
   }
 
-  @media screen and ($media-xs) {
+  @media screen and (--extra-small-viewport) {
     @include pad(16px, 16px);
   }
 
@@ -18,15 +18,15 @@
   }
 
   &__title {
-    @include text('Inter', 500, 50px, 64px, var(--black));
+    @include text('Inter', 500, 50px, 64px, --black);
     margin: 0;
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       font-size: 44px;
       text-align: center;
     }
 
-    @media screen and ($media-xs) {
+    @media screen and (--extra-small-viewport) {
       font-weight: 400;
       font-size: 28px;
       line-height: 38px;
@@ -39,7 +39,7 @@
     align-items: center;
     margin-bottom: 38px;
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -51,11 +51,11 @@
     @include pad(30px, 30px);
     background-color: var(--grey-1);
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       @include pad(20px, 20px);
     }
 
-    @media screen and ($media-xs) {
+    @media screen and (--extra-small-viewport) {
       @include pad(16px, 16px);
     }
 
@@ -73,7 +73,7 @@
 
   &__link-navigation {
     text-decoration: none;
-    @include text('Inter', 400, 16px, 24px, var(--grey-3));
+    @include text('Inter', 400, 16px, 24px, --grey-3);
 
     & + & {
       margin-left: 24px;
@@ -84,13 +84,13 @@
     color: var(--black);
   }
 
-  @media screen and ($media-s) {
+  @media screen and (--small-viewport) {
     &__navigation {
       display: none;
     }
   }
 
-  @media screen and ($media-xs) {
+  @media screen and (--extra-small-viewport) {
     &__navigation {
       display: none;
     }
@@ -107,7 +107,7 @@
     position: absolute;
     transform: translate(0, -50%);
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       display: block;
     }
   }
@@ -121,17 +121,20 @@
     align-items: center;
     margin-left: 56px;
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       display: none;
     }
   }
 
   &__icon-theme-changer-sun {
     margin-right: 12px;
-    color: var(--grey-3);
+    color: var(--grey-4);
+    fill: transparent;
   }
 
   &__icon-theme-changer-moon {
     margin-left: 12px;
+    color: var(--grey-3);
+    fill: transparent;
   }
 }

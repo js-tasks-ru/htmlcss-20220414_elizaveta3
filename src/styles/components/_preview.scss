@@ -1,14 +1,4 @@
 .preview {
-  /* @media screen and ($media-s) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  @media screen and ($media-xs) {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  } */
-
   &__inner {
     background-color: var(--grey-1);
     padding-top: 68px;
@@ -28,11 +18,11 @@
     gap: 30px;
     margin-bottom: 32px;
 
-    @media screen and ($media-m) {
+    @media screen and (--medium-viewport) {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media screen and ($media-s) {
+    @media screen and (--small-viewport) {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(230px, auto));
       gap: 30px;
@@ -47,6 +37,6 @@
     margin: 0;
     margin-bottom: 28px;
     text-transform: uppercase;
-    @include text('Inter', 400, 28px, 30px, var(--grey-2));
+    @include text('Inter', 400, 28px, 30px, --grey-2);
   }
 }
